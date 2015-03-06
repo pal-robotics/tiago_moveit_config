@@ -1,6 +1,10 @@
 <launch>
+  <!-- Selector for tiago type -->
+  <arg name="robot" default="titanium"/>
 
-  <include file="$(find tiago_moveit_config)/launch/planning_context.launch" />
+  <include file="$(find tiago_moveit_config)/launch/planning_context.launch">
+    <arg name="robot" value="$(arg robot)" />
+  </include>
 
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />
