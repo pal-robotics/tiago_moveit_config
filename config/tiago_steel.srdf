@@ -272,7 +272,9 @@
     <disable_collisions link1="base_bumper_link" link2="caster_back_right_1_link" reason="Never" />
     <disable_collisions link1="base_bumper_link" link2="caster_back_right_2_link" reason="Never" />
     <disable_collisions link1="base_bumper_link" link2="caster_front_left_1_link" reason="Never" />
+    <disable_collisions link1="base_bumper_link" link2="caster_front_left_2_link" reason="Never" />
     <disable_collisions link1="base_bumper_link" link2="caster_front_right_1_link" reason="Never" />
+    <disable_collisions link1="base_bumper_link" link2="caster_front_right_2_link" reason="Never" />
     <disable_collisions link1="base_bumper_link" link2="head_1_link" reason="Never" />
     <disable_collisions link1="base_bumper_link" link2="head_2_link" reason="Never" />
     <disable_collisions link1="base_bumper_link" link2="torso_fixed_link" reason="Never" />
