@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2015-04-14)
+------------------
 * Fix gripper parts
 * Add torso controller
 * Separate configuration files for titanium and steel, launch files parametrized
