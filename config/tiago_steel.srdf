@@ -12,8 +12,12 @@
     <group name="arm_torso">
         <chain base_link="torso_fixed_link" tip_link="arm_tool_link" />
     </group>
+    <group name="gripper">
+        <joint name="gripper_left_finger_joint" />
+        <joint name="gripper_right_finger_joint" />
+    </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="gripper" parent_link="arm_tool_link" group="arm_torso" />
+    <end_effector name="gripper" parent_link="arm_tool_link" group="gripper" parent_group="arm_torso" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="arm_1_link" link2="arm_2_link" reason="Adjacent" />
     <disable_collisions link1="arm_1_link" link2="arm_3_link" reason="Never" />
