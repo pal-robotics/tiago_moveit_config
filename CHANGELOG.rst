@@ -2,6 +2,12 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add hand_safety_box to the game!
+* Disable more collisions between hand links
+* Contributors: Bence Magyar
+
 0.0.3 (2015-04-14)
 ------------------
 * Fix gripper parts
