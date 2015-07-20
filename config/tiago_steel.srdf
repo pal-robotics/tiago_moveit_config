@@ -44,17 +44,8 @@
     <disable_collisions link1="arm_1_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="arm_tool_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_battery_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_charger_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="base_laser_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="base_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_1_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="caster_back_right_1_link" reason="Never" />
@@ -78,17 +69,8 @@
     <disable_collisions link1="arm_2_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="arm_tool_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_battery_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_charger_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="base_laser_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="base_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_2_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_2_link" link2="caster_back_right_1_link" reason="Never" />
@@ -112,17 +94,8 @@
     <disable_collisions link1="arm_3_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="arm_tool_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_battery_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_charger_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="base_laser_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="base_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_3_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_3_link" link2="caster_back_right_1_link" reason="Never" />
@@ -143,15 +116,7 @@
     <disable_collisions link1="arm_4_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="arm_tool_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_charger_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="base_laser_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_4_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="caster_back_right_1_link" reason="Never" />
@@ -171,12 +136,6 @@
     <disable_collisions link1="arm_5_link" link2="arm_6_link" reason="Adjacent" />
     <disable_collisions link1="arm_5_link" link2="arm_7_link" reason="Default" />
     <disable_collisions link1="arm_5_link" link2="arm_tool_link" reason="Never" />
-    <disable_collisions link1="arm_5_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_5_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_5_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_5_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_5_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_5_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_5_link" link2="caster_back_right_1_link" reason="Never" />
@@ -192,12 +151,6 @@
     <disable_collisions link1="arm_5_link" link2="xtion_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="arm_7_link" reason="Adjacent" />
     <disable_collisions link1="arm_6_link" link2="arm_tool_link" reason="Never" />
-    <disable_collisions link1="arm_6_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_6_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_6_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_6_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_6_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_6_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="caster_back_right_1_link" reason="Never" />
@@ -213,13 +166,6 @@
     <disable_collisions link1="arm_6_link" link2="head_2_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="xtion_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="arm_tool_link" reason="Adjacent" />
-    <disable_collisions link1="arm_7_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_7_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_7_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_7_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_7_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_7_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_7_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="caster_back_right_1_link" reason="Never" />
@@ -234,13 +180,6 @@
     <disable_collisions link1="arm_7_link" link2="head_1_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="head_2_link" reason="Never" />
     <disable_collisions link1="arm_7_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="arm_tool_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_right_1_link" reason="Never" />
@@ -255,85 +194,7 @@
     <disable_collisions link1="arm_tool_link" link2="head_1_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="head_2_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_bumper_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_charger_link" reason="Adjacent" />
-    <disable_collisions link1="base_battery_link" link2="base_laser_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="base_battery_link" link2="base_rear_cover_link" reason="Adjacent" />
-    <disable_collisions link1="base_battery_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_battery_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_charger_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_laser_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="base_bumper_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_bumper_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="base_laser_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="base_charger_link" link2="base_rear_cover_link" reason="Adjacent" />
-    <disable_collisions link1="base_charger_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_charger_link" link2="xtion_link" reason="Never" />
     <disable_collisions link1="base_laser_link" link2="base_link" reason="Adjacent" />
-    <disable_collisions link1="base_laser_link" link2="base_rear_cover_link" reason="Never" />
-    <disable_collisions link1="base_laser_link" link2="base_rear_cover_sonar_01_link" reason="Never" />
-    <disable_collisions link1="base_laser_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="base_laser_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="base_laser_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_laser_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
     <disable_collisions link1="base_laser_link" link2="caster_back_left_1_link" reason="Never" />
     <disable_collisions link1="base_laser_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="base_laser_link" link2="caster_back_right_1_link" reason="Never" />
@@ -349,12 +210,6 @@
     <disable_collisions link1="base_laser_link" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="base_laser_link" link2="wheel_right_link" reason="Never" />
     <disable_collisions link1="base_laser_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_link" link2="base_rear_cover_link" reason="Adjacent" />
-    <disable_collisions link1="base_link" link2="base_rear_cover_sonar_01_link" reason="Default" />
-    <disable_collisions link1="base_link" link2="base_rear_cover_sonar_02_link" reason="Default" />
-    <disable_collisions link1="base_link" link2="base_rear_cover_sonar_03_link" reason="Default" />
-    <disable_collisions link1="base_link" link2="base_rear_cover_sonar_04_link" reason="Default" />
-    <disable_collisions link1="base_link" link2="base_rear_cover_sonar_05_link" reason="Default" />
     <disable_collisions link1="base_link" link2="caster_back_left_1_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="caster_back_right_1_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="caster_front_left_1_link" reason="Adjacent" />
@@ -368,113 +223,6 @@
     <disable_collisions link1="base_link" link2="wheel_left_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="wheel_right_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="base_rear_cover_sonar_01_link" reason="Adjacent" />
-    <disable_collisions link1="base_rear_cover_link" link2="base_rear_cover_sonar_02_link" reason="Adjacent" />
-    <disable_collisions link1="base_rear_cover_link" link2="base_rear_cover_sonar_03_link" reason="Adjacent" />
-    <disable_collisions link1="base_rear_cover_link" link2="base_rear_cover_sonar_04_link" reason="Adjacent" />
-    <disable_collisions link1="base_rear_cover_link" link2="base_rear_cover_sonar_05_link" reason="Adjacent" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="base_rear_cover_sonar_02_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_01_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="base_rear_cover_sonar_03_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_02_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="base_rear_cover_sonar_04_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="gripper_left_finger_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_03_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="base_rear_cover_sonar_05_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_04_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_back_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_back_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_back_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_back_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_front_left_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_front_left_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_front_right_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="caster_front_right_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="gripper_right_finger_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="head_1_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="head_2_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="torso_fixed_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="torso_lift_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="wheel_left_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="wheel_right_link" reason="Never" />
-    <disable_collisions link1="base_rear_cover_sonar_05_link" link2="xtion_link" reason="Never" />
     <disable_collisions link1="caster_back_left_1_link" link2="caster_back_left_2_link" reason="Adjacent" />
     <disable_collisions link1="caster_back_left_1_link" link2="caster_back_right_1_link" reason="Never" />
     <disable_collisions link1="caster_back_left_1_link" link2="caster_back_right_2_link" reason="Never" />
