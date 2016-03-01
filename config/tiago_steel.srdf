@@ -339,10 +339,11 @@
     <disable_collisions link1="head_2_link" link2="wheel_right_link" reason="Never" />
     <disable_collisions link1="head_2_link" link2="xtion_link" reason="Adjacent" />
     <disable_collisions link1="torso_fixed_link" link2="torso_lift_link" reason="Adjacent" />
+    <disable_collisions link1="torso_fixed_link" link2="torso_fixed_column_link" reason="Adjacent" />
     <disable_collisions link1="torso_fixed_link" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="torso_fixed_link" link2="wheel_right_link" reason="Never" />
     <disable_collisions link1="torso_fixed_link" link2="xtion_link" reason="Never" />
-    <disable_collisions link1="torso_fixed_link" link2="torso_fixed_column_link" reason="Adjacent" />
+    <disable_collisions link1="torso_fixed_column_link" link2="torso_lift_link" reason="Adjacent" />
     <disable_collisions link1="torso_lift_link" link2="wheel_left_link" reason="Never" />
     <disable_collisions link1="torso_lift_link" link2="wheel_right_link" reason="Never" />
     <disable_collisions link1="torso_lift_link" link2="xtion_link" reason="Never" />
