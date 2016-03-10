@@ -31,45 +31,47 @@
         <joint name="arm_tool_joint" />
     </group>
     <group name="hand">
-        <joint name="hand_grasping_fixed_joint" />
-        <joint name="hand_index_abd_joint" />
-        <joint name="hand_index_flex_1_joint" />
-        <joint name="hand_index_flex_2_joint" />
-        <joint name="hand_index_flex_3_joint" />
         <joint name="hand_index_joint" />
-        <joint name="hand_index_virtual_1_joint" />
-        <joint name="hand_index_virtual_2_joint" />
-        <joint name="hand_index_virtual_3_joint" />
-        <joint name="hand_little_abd_joint" />
-        <joint name="hand_little_flex_1_joint" />
-        <joint name="hand_little_flex_2_joint" />
-        <joint name="hand_little_flex_3_joint" />
-        <joint name="hand_little_virtual_1_joint" />
-        <joint name="hand_little_virtual_2_joint" />
-        <joint name="hand_little_virtual_3_joint" />
-        <joint name="hand_middle_abd_joint" />
-        <joint name="hand_middle_flex_1_joint" />
-        <joint name="hand_middle_flex_2_joint" />
-        <joint name="hand_middle_flex_3_joint" />
-        <joint name="hand_middle_virtual_1_joint" />
-        <joint name="hand_middle_virtual_2_joint" />
-        <joint name="hand_middle_virtual_3_joint" />
-        <joint name="hand_mrl_joint" />
-        <joint name="hand_palm_joint" />
-        <joint name="hand_ring_abd_joint" />
-        <joint name="hand_ring_flex_1_joint" />
-        <joint name="hand_ring_flex_2_joint" />
-        <joint name="hand_ring_flex_3_joint" />
-        <joint name="hand_ring_virtual_1_joint" />
-        <joint name="hand_ring_virtual_2_joint" />
-        <joint name="hand_ring_virtual_3_joint" />
-        <joint name="hand_thumb_abd_joint" />
-        <joint name="hand_thumb_flex_1_joint" />
-        <joint name="hand_thumb_flex_2_joint" />
         <joint name="hand_thumb_joint" />
-        <joint name="hand_thumb_virtual_1_joint" />
-        <joint name="hand_thumb_virtual_2_joint" />
+        <joint name="hand_mrl_joint" />
     </group>
+    
+    <passive_joint name="hand_grasping_fixed_joint" />
+    <passive_joint name="hand_index_abd_joint" />
+    <passive_joint name="hand_index_flex_1_joint" />
+    <passive_joint name="hand_index_flex_2_joint" />
+    <passive_joint name="hand_index_flex_3_joint" />
+    <passive_joint name="hand_index_virtual_1_joint" />
+    <passive_joint name="hand_index_virtual_2_joint" />
+    <passive_joint name="hand_index_virtual_3_joint" />
+    <passive_joint name="hand_little_abd_joint" />
+    <passive_joint name="hand_little_flex_1_joint" />
+    <passive_joint name="hand_little_flex_2_joint" />
+    <passive_joint name="hand_little_flex_3_joint" />
+    <passive_joint name="hand_little_virtual_1_joint" />
+    <passive_joint name="hand_little_virtual_2_joint" />
+    <passive_joint name="hand_little_virtual_3_joint" />
+    <passive_joint name="hand_middle_abd_joint" />
+    <passive_joint name="hand_middle_flex_1_joint" />
+    <passive_joint name="hand_middle_flex_2_joint" />
+    <passive_joint name="hand_middle_flex_3_joint" />
+    <passive_joint name="hand_middle_virtual_1_joint" />
+    <passive_joint name="hand_middle_virtual_2_joint" />
+    <passive_joint name="hand_middle_virtual_3_joint" />
+    <passive_joint name="hand_palm_joint" />
+    <passive_joint name="hand_ring_abd_joint" />
+    <passive_joint name="hand_ring_flex_1_joint" />
+    <passive_joint name="hand_ring_flex_2_joint" />
+    <passive_joint name="hand_ring_flex_3_joint" />
+    <passive_joint name="hand_ring_virtual_1_joint" />
+    <passive_joint name="hand_ring_virtual_2_joint" />
+    <passive_joint name="hand_ring_virtual_3_joint" />
+    <passive_joint name="hand_thumb_abd_joint" />
+    <passive_joint name="hand_thumb_flex_1_joint" />
+    <passive_joint name="hand_thumb_flex_2_joint" />
+    <passive_joint name="hand_thumb_virtual_1_joint" />
+    <passive_joint name="hand_thumb_virtual_2_joint" />
+
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand" parent_link="arm_tool_link" group="hand" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
