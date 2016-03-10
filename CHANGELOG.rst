@@ -2,6 +2,15 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Refs #11489. Discard collisions between torsolinks
+* Fix collisions with column
+* Remove elements of prototype mobilebase
+* Disable collision hand safety box <-> wrist mesh
+* Add arm group + disable more internal hand collisions
+* Contributors: Bence Magyar, jordi.pages@pal-robotics.com
+
 0.0.4 (2015-05-20)
 ------------------
 * Add hand_safety_box to the game!
