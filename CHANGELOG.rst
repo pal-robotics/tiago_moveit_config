@@ -2,6 +2,12 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Passing change to titanium too about torso_fixed_column_link collision with arm1 disabling
+* Added another currently happening collision exception between torso_fixed_column_link and arm_1_link
+* Contributors: Sam Pfeiffer
+
 0.0.6 (2016-03-18)
 ------------------
 * Add hand passive joints as passive
