@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added impossible collision disabling between torso_fixed_column_link and arm_2_link
+* Contributors: Sam Pfeiffer
+
 0.0.7 (2016-03-18)
 ------------------
 * Passing change to titanium too about torso_fixed_column_link collision with arm1 disabling
