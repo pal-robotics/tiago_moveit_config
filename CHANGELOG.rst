@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2016-03-18)
+------------------
 * Add hand passive joints as passive
 * added clear octomap and removed exceptions on collisions of arm wit hhead
 * Contributors: Sam Pfeiffer
