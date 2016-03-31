@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.9 (2016-03-31)
+------------------
 * Add disable collisions
   Using the generator.
   From:
