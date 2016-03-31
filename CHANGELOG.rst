@@ -2,6 +2,23 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add disable collisions
+  Using the generator.
+  From:
+  1300 / 2145 pairs disabled in tiago_titanium (845 enabled)
+  To:
+  2268 / 3096 pairs disabled in tiago_titanium (828 enabled)
+* Add disable collisions
+  Generated using https://gist.github.com/awesomebytes/18fe75b808c4c644bd3d a script that runs the urdf tree for adjacent links and checks for links without collision mesh to also disable the collision computation between them.
+  From:
+  (Generating matrix with max sampling density)
+  329 / 465 pairs disabled in tiago_steel (136 enabled)
+  To:
+  754 / 873 pairs disabled in tiago_steel (119 enabled)
+* Contributors: Sam Pfeiffer
+
 0.0.8 (2016-03-18)
 ------------------
 * Added impossible collision disabling between torso_fixed_column_link and arm_2_link
