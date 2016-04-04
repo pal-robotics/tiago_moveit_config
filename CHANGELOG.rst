@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.11 (2016-04-04)
+-------------------
 * Missing hand_palm_link in collision disables
 * Contributors: Sam Pfeiffer
 
