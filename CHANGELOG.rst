@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.12 (2016-04-04)
+-------------------
 * Increase max speed of torso
 * Contributors: Sam Pfeiffer
 
