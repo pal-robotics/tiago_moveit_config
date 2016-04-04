@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.10 (2016-04-04)
+-------------------
 * Add disables in between hand finger links
   Without this, the robot will refuse to plan with closed hand
 * Contributors: Sam Pfeiffer
