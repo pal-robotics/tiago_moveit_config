@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Increase max speed of torso
+* Contributors: Sam Pfeiffer
+
 0.0.11 (2016-04-04)
 -------------------
 * Missing hand_palm_link in collision disables
