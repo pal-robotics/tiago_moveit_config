@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.13 (2016-06-01)
+-------------------
 * Added controllers for hand and gripper
 * Contributors: Sam Pfeiffer
 
