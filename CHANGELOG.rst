@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added controllers for hand and gripper
+* Contributors: Sam Pfeiffer
+
 0.0.12 (2016-04-04)
 -------------------
 * Increase max speed of torso
