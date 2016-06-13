@@ -2,6 +2,12 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added necessary dependence to run moveit with a simulated or real robot
+* Add disable collisions for force torque sensor
+* Contributors: Sam Pfeiffer
+
 0.0.13 (2016-06-01)
 -------------------
 * Added controllers for hand and gripper
