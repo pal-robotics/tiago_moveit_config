@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.14 (2016-06-13)
+-------------------
 * Added necessary dependence to run moveit with a simulated or real robot
 * Add disable collisions for force torque sensor
 * Contributors: Sam Pfeiffer
