@@ -2,6 +2,18 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-titanium-collisions-with-ft' into 'cobalt-devel'
+  add missing potential collisions with ft sensor frames
+  See merge request !5
+* add collisions with ft sensor
+* Merge branch 'tiago_configs' into 'cobalt-devel'
+  Added the 4 possible configurations of tiago_moveit_config
+  See merge request !4
+* Added the 4 possible configurations of tiago_moveit_config
+* Contributors: Jordi Pages, Sam Pfeiffer, Victor Lopez
+
 0.0.14 (2016-06-13)
 -------------------
 * Added necessary dependence to run moveit with a simulated or real robot
