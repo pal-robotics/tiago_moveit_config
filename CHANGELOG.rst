@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.15 (2016-07-08)
+-------------------
 * Merge branch 'add-titanium-collisions-with-ft' into 'cobalt-devel'
   add missing potential collisions with ft sensor frames
   See merge request !5
