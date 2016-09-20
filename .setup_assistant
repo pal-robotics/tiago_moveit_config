@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: tiago_description
+    relative_path: robots/tiago_full.urdf.xacro
+  SRDF:
+    relative_path: config/tiago.srdf
+  CONFIG:
+    generated_timestamp: 1416393279

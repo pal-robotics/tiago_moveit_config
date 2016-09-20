@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <!-- Selector for tiago type -->
   <arg name="robot" default="titanium"/>
@@ -29,10 +30,12 @@
   </include>
 
   <!-- Trajectory Execution Functionality -->
+  <arg name="robot_sufix"  default=""/>
   <include ns="move_group" file="$(find tiago_moveit_config)/launch/trajectory_execution.launch.xml" if="$(arg allow_trajectory_execution)">
     <arg name="moveit_manage_controllers" value="true" />
     <arg name="moveit_controller_manager" value="tiago" unless="$(arg fake_execution)"/>
     <arg name="moveit_controller_manager" value="fake" if="$(arg fake_execution)"/>
+    <arg name="robot_sufix" value="$(arg robot_sufix)" />
   </include>
 
   <!-- Sensors Functionality -->
@@ -59,6 +62,7 @@
 				      move_group/MoveGroupQueryPlannersService
 				      move_group/MoveGroupStateValidationService
 				      move_group/MoveGroupGetPlanningSceneService
+              move_group/ClearOctomapService
 				      " />
 
     <!-- Publish the planning scene of the physical robot so that rviz plugin can know actual robot -->

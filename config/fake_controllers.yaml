@@ -18,3 +18,19 @@ controller_list:
       - arm_5_joint
       - arm_6_joint
       - arm_7_joint
+  - name: fake_gripper_controller
+    joints:
+      - gripper_left_finger_joint
+      - gripper_right_finger_joint
+  - name: fake_head_controller
+    joints:
+      - head_1_joint
+      - head_2_joint
+  - name: fake_torso_controller
+    joints:
+      - torso_lift_joint
+  - name: fake_hand_controller
+    joints:
+      - hand_index_joint
+      - hand_thumb_joint
+      - hand_mrl_joint

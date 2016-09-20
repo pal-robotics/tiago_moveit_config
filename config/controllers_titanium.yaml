@@ -25,13 +25,6 @@ controller_list:
     joints:
       - head_1_joint
       - head_2_joint
-  - name: gripper_controller
-    action_ns: follow_joint_trajectory
-    type: FollowJointTrajectory
-    default: true
-    joints:
-      - gripper_left_finger_joint
-      - gripper_right_finger_joint
   - name: hand_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
