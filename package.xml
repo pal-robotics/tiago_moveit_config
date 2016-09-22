@@ -6,7 +6,7 @@
      An automatically generated package with all the configuration and launch files for using the tiago with the MoveIt Motion Planning Framework
   </description>
   <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
-  <maintainer email="assistant@moveit.ros.org">MoveIt Setup Assistant</maintainer>
+  <maintainer email="tiago_support@pal-robotics.com">TIAGo PAL support team</maintainer>
 
   <license>BSD</license>
 
