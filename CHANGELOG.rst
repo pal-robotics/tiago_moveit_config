@@ -2,6 +2,19 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* fix maintainer
+* add argument for steel and titanium versions
+* add missing xml formatting
+* add specific controllers for steel and titanium
+* disable collision arm_5_link-gripper_link
+* disable collision arm_6_link-wrist_ft_link
+* add missing joints
+* use soft links for steel and titanium srdf files
+* disable collisions arm_5_link-gripper_link
+* Contributors: Jordi Pages
+
 0.0.15 (2016-07-08)
 -------------------
 * Merge branch 'add-titanium-collisions-with-ft' into 'cobalt-devel'
