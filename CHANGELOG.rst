@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.16 (2016-10-21)
+-------------------
 * fix maintainer
 * add argument for steel and titanium versions
 * add missing xml formatting
