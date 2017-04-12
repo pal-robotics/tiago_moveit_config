@@ -3,6 +3,9 @@
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
   <arg name="load_robot_description" default="false"/>
 
+  <!-- Selection of kinematics solver -->
+  <arg name="kinematics" value="$(optenv IK_SOLVER kdl)" />
+
   <!-- The name of the parameter under which the URDF is loaded -->
   <arg name="robot_description" default="robot_description"/>
 
@@ -22,7 +25,7 @@
 
   <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
   <group ns="$(arg robot_description)_kinematics">
-    <rosparam command="load" file="$(find tiago_moveit_config)/config/kinematics.yaml"/>
+    <rosparam command="load" file="$(find tiago_moveit_config)/config/kinematics_$(arg kinematics).yaml"/>
   </group>
   
 </launch>
