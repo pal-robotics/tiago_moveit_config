@@ -2,6 +2,22 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'octomap_track_ik' into 'cobalt-devel'
+  merge_problems_with david
+  See merge request !11
+* merge_problems_with david
+* Merge branch 'iron-configuration' into 'cobalt-devel'
+  Add configuration for Tiago Iron
+  See merge request !10
+* Merge branch 'octomap_track_ik' into 'cobalt-devel'
+  octomap & track ik solver for MoveIt!
+  See merge request !9
+* Add configuration for Tiago Iron
+* octomap & track ik solver for MoveIt!
+* Contributors: AleDF, Jordi Pages, davidfernandez
+
 0.0.16 (2016-10-21)
 -------------------
 * fix maintainer
