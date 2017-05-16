@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.17 (2017-05-16)
+-------------------
 * Merge branch 'octomap_track_ik' into 'cobalt-devel'
   merge_problems_with david
   See merge request !11
