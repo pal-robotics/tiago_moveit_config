@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.18 (2017-11-03)
+-------------------
 * Change the topic and the max_range for the octomap parameters
 * Contributors: AleDF, Jordi Pages
 
