@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Change the topic and the max_range for the octomap parameters
+* Contributors: AleDF, Jordi Pages
+
 0.0.17 (2017-05-16)
 -------------------
 * Merge branch 'octomap_track_ik' into 'cobalt-devel'
