@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.19 (2018-01-24)
+-------------------
 * add config files for schunk and some renamings
 * Contributors: Jordi Pages
 
