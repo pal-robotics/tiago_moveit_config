@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add config files for schunk and some renamings
+* Contributors: Jordi Pages
+
 0.0.18 (2017-11-03)
 -------------------
 * Change the topic and the max_range for the octomap parameters
