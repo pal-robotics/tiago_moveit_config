@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.20 (2018-03-26)
+-------------------
 * Merge branch 'recover-chessboard-tiago' into 'cobalt-devel'
   Disable collision between arm 7 and chessboard
   See merge request robots/tiago_moveit_config!13
