@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'recover-chessboard-tiago' into 'cobalt-devel'
+  Disable collision between arm 7 and chessboard
+  See merge request robots/tiago_moveit_config!13
+* Disable collision between arm 7 and chessboard
+* Contributors: Jordi Pages, Victor Lopez
+
 0.0.19 (2018-01-24)
 -------------------
 * add config files for schunk and some renamings
