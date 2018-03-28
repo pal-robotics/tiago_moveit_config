@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'disable-sonar-collision' into 'cobalt-devel'
+  Disable sonar collision with base_link
+  See merge request robots/tiago_moveit_config!14
+* Disable sonar collision with base_link
+* Contributors: Victor Lopez, davidfernandez
+
 0.0.20 (2018-03-26)
 -------------------
 * Merge branch 'recover-chessboard-tiago' into 'cobalt-devel'
