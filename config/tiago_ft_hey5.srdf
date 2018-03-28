@@ -560,6 +560,9 @@
     <disable_collisions link1="base_link" link2="torso_lift_link" reason="Never" />
     <disable_collisions link1="base_link" link2="wheel_left_link" reason="Adjacent" />
     <disable_collisions link1="base_link" link2="wheel_right_link" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="base_sonar_01_link" reason="Never"/>
+    <disable_collisions link1="base_link" link2="base_sonar_02_link" reason="Never"/>
+    <disable_collisions link1="base_link" link2="base_sonar_03_link" reason="Never"/>
     <disable_collisions link1="caster_back_left_1_link" link2="caster_back_left_2_link" reason="Adjacent" />
     <disable_collisions link1="caster_back_left_1_link" link2="caster_back_right_1_link" reason="Never" />
     <disable_collisions link1="caster_back_left_1_link" link2="caster_back_right_2_link" reason="Never" />
