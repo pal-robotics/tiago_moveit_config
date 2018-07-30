@@ -2,6 +2,19 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'fix-simulation-warnings' into 'cobalt-devel'
+  fix deprecated namespace
+  See merge request robots/tiago_moveit_config!15
+* fix deprecated namespace
+* fix demo mode by adding missing argument
+  You hacked multi-robot support into a generated moveit configuration
+  but didn't test "roslaunch tiago_moveit_config demo.launch".
+  I agree that gazebo support is better than the demo mode, but
+  it can be very useful to test MoveIt-based code without controlling.
+* Contributors: Jordi Pages, Victor Lopez, v4hn
+
 0.0.21 (2018-03-28)
 -------------------
 * Merge branch 'disable-sonar-collision' into 'cobalt-devel'
