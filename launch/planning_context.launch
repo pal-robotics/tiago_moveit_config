@@ -10,22 +10,37 @@
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Selector for tiago type -->
-  <arg name="robot" default="titanium"/>
+  <arg name="arm"  default="True"/>
+  <arg name="end_effector"  default="pal-hey5"/>
+  <arg name="ft_sensor"  default="schunk-ft"/>
+  <arg name="laser_model"  default="sick-571"/>
+  <arg name="camera_model"  default="orbbec-astra"/>
+  <arg name="file_suffix" value="$(eval ('no-arm' if not arm else end_effector+ ('' if not ft_sensor else '_'+ft_sensor)))"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find tiago_description)/robots/tiago_$(arg robot).urdf.xacro' have_base_rgbd:=false"/>
+  <group if="$(arg load_robot_description)">
+    <include file="$(find tiago_description)/robots/upload.launch">
+      <arg name="arm" value="$(arg arm)"/>
+      <arg name="end_effector" value="$(arg end_effector)"/>
+      <arg name="ft_sensor" value="$(arg ft_sensor)"/>
+      <arg name="laser_model" value="$(arg laser_model)"/>
+      <arg name="camera_model" value="$(arg camera_model)"/>
+      <arg name="multi"  value="$(arg multi)"/>
+    </include>
+    <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find tiago_description)/robots/tiago_$(arg robot).urdf.xacro' have_base_rgbd:=false"/>
+  </group>
 
   <!-- The semantic description that corresponds to the URDF -->
-  <param name="$(arg robot_description)_semantic" textfile="$(find tiago_moveit_config)/config/tiago_$(arg robot).srdf" />
-  
+  <param name="$(arg robot_description)_semantic" textfile="$(find tiago_moveit_config)/config/srdf/tiago_$(arg file_suffix).srdf" />
+
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
-    <rosparam command="load" file="$(find tiago_moveit_config)/config/joint_limits_$(arg robot).yaml"/>
+    <rosparam command="load" file="$(find tiago_moveit_config)/config/joint_limits.yaml"/>
   </group>
 
   <!-- Load default settings for kinematics; these settings are overridden by settings in a node's namespace -->
   <group ns="$(arg robot_description)_kinematics">
     <rosparam command="load" file="$(find tiago_moveit_config)/config/kinematics_$(arg kinematics).yaml"/>
   </group>
-  
+
 </launch>

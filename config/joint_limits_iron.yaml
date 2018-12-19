@@ -1,6 +1,0 @@
-joint_limits:
-  torso_lift_joint:
-    has_velocity_limits: true
-    max_velocity: 0.07
-    has_acceleration_limits: false
-    max_acceleration: 0

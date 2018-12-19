@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
   <!-- Selector for tiago type -->
-  <arg name="robot" default="titanium"/>
-  <arg name="camera" default="false"/>
+  <arg name="arm"  default="True"/>
+  <arg name="end_effector"  default="pal-hey5"/>
+  <arg name="ft_sensor"  default="schunk-ft"/>
+  <arg name="laser_model"  default="sick-571"/>
+  <arg name="camera_model"  default="orbbec-astra"/>
+  <!-- Use moveit camera manager -->
+  <arg name="camera"  default="false"/>
 
   <include file="$(find tiago_moveit_config)/launch/planning_context.launch">
-    <arg name="robot" value="$(arg robot)" />
+    <arg name="arm" value="$(arg arm)"/>
+    <arg name="end_effector" value="$(arg end_effector)"/>
+    <arg name="ft_sensor" value="$(arg ft_sensor)"/>
+    <arg name="laser_model" value="$(arg laser_model)"/>
+    <arg name="camera_model" value="$(arg camera_model)"/>
   </include>
 
   <!-- GDB Debug Option -->
@@ -14,12 +23,12 @@
   <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
 
   <!-- Verbose Mode Option -->
-  <arg name="info" default="$(arg debug)" />  
+  <arg name="info" default="$(arg debug)" />
   <arg unless="$(arg info)" name="command_args" value="" />
   <arg     if="$(arg info)" name="command_args" value="--debug" />
 
   <!-- move_group settings -->
-  <arg name="allow_trajectory_execution" default="true"/> 
+  <arg name="allow_trajectory_execution" default="true"/>
   <arg name="fake_execution" default="false"/>
   <arg name="max_safe_path_cost" default="1"/>
   <arg name="jiggle_fraction" default="0.05" />
@@ -31,18 +40,18 @@
   </include>
 
   <!-- Trajectory Execution Functionality -->
-  <arg name="robot_sufix"  default=""/>
+  <arg name="file_suffix" value="$(eval ('no-arm' if not arm else end_effector+ ('' if not ft_sensor else '_'+ft_sensor)))"/>
   <include ns="move_group" file="$(find tiago_moveit_config)/launch/trajectory_execution.launch.xml" if="$(arg allow_trajectory_execution)">
     <arg name="moveit_manage_controllers" value="true" />
     <arg name="moveit_controller_manager" value="tiago" unless="$(arg fake_execution)"/>
     <arg name="moveit_controller_manager" value="fake" if="$(arg fake_execution)"/>
-    <arg name="robot_sufix" value="$(arg robot_sufix)" />
+    <arg name="robot_sufix" value="$(arg file_suffix)" />
   </include>
 
   <!-- Sensors Functionality -->
   <group if="$(arg camera)">
     <include ns="move_group" file="$(find tiago_moveit_config)/launch/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
-      <arg name="moveit_sensor_manager" value="tiago" /> 
+      <arg name="moveit_sensor_manager" value="tiago" />
     </include>
   </group>
 
@@ -74,5 +83,5 @@
     <param name="planning_scene_monitor/publish_state_updates" value="$(arg publish_monitored_planning_scene)" />
     <param name="planning_scene_monitor/publish_transforms_updates" value="$(arg publish_monitored_planning_scene)" />
   </node>
-  
+
 </launch>

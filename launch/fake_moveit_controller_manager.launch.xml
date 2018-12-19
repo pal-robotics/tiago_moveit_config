@@ -5,6 +5,6 @@
   <param name="moveit_controller_manager" value="moveit_fake_controller_manager/MoveItFakeControllerManager"/>
 
   <!-- The rest of the params are specific to this plugin -->
-  <rosparam file="$(find tiago_moveit_config)/config/fake_controllers.yaml"/>
+  <rosparam file="$(find tiago_moveit_config)/config/fake_controllers/fake_controllers_$(arg robot_sufix).yaml"/>
 
 </launch>
