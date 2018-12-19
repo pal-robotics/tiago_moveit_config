@@ -2,6 +2,9 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.0.22 (2018-07-30)
 -------------------
 * Merge branch 'fix-simulation-warnings' into 'cobalt-devel'
