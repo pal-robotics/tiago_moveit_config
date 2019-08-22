@@ -2,6 +2,12 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add missing multi argument
+* Decrease segment size for validation
+* Contributors: Victor Lopez
+
 1.0.1 (2018-12-19)
 ------------------
 * Merge branch 'specifics-refactor' into 'erbium-devel'
