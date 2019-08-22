@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.2 (2019-08-22)
+------------------
 * Add missing multi argument
 * Decrease segment size for validation
 * Contributors: Victor Lopez
