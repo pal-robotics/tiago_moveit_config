@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'move_group_capability' into 'erbium-devel'
+  send capabilities through args
+  See merge request robots/tiago_moveit_config!18
+* send capabilities through args
+* Contributors: Victor Lopez, YueErro
+
 1.0.2 (2019-08-22)
 ------------------
 * Add missing multi argument
