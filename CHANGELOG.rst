@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.3 (2020-02-06)
+------------------
 * Merge branch 'move_group_capability' into 'erbium-devel'
   send capabilities through args
   See merge request robots/tiago_moveit_config!18
