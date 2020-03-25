@@ -32,7 +32,8 @@
   </group>
 
   <!-- The semantic description that corresponds to the URDF -->
-  <param name="$(arg robot_description)_semantic" textfile="$(find tiago_moveit_config)/config/srdf/tiago_$(arg file_suffix).srdf" />
+  <param if="$(eval end_effector != 'custom')" name="$(arg robot_description)_semantic" textfile="$(find tiago_moveit_config)/config/srdf/tiago_$(arg file_suffix).srdf" />
+  <param if="$(eval end_effector == 'custom')" name="$(arg robot_description)_semantic" textfile="$(find moveit_custom_config)/config/srdf/tiago_custom.srdf" />
 
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
