@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.4 (2020-04-21)
+------------------
 * Merge branch 'custom-ee' into 'erbium-devel'
   Allow using custom end-effector
   See merge request robots/tiago_moveit_config!19
