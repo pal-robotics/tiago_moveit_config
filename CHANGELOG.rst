@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.5 (2020-06-09)
+------------------
 * Add arm_5 wrist ignore collisions
 * Contributors: Victor Lopez
 
