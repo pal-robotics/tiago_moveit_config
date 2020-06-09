@@ -3411,12 +3411,14 @@
     <disable_collisions link1="wrist_ft_link" link2="gripper_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="gripper_right_finger_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="gripper_left_finger_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_5_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="arm_tool_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="gripper_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="gripper_right_finger_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="gripper_left_finger_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_5_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="arm_tool_link" reason="Never" />
@@ -3428,12 +3430,14 @@
     <!-- Disable collisions with FT sensor -->
     <disable_collisions link1="wrist_ft_link" link2="arm_tool_link" reason="Adjacent" />
     <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_5_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="arm_tool_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="hand_safety_box" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="hand_palm_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="hand_palm_link" reason="Adjacent" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_5_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="arm_6_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="wrist_ft_tool_link" link2="arm_tool_link" reason="Never" />
