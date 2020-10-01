@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'hey5_marker' into 'erbium-devel'
+  Hey5 marker
+  See merge request robots/tiago_moveit_config!21
+* Hey5 marker
+* Contributors: Adria Roig, victor
+
 1.0.5 (2020-06-09)
 ------------------
 * Add arm_5 wrist ignore collisions
