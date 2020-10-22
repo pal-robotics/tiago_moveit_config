@@ -1,7 +1,7 @@
 moveit_setup_assistant_config:
   URDF:
     package: tiago_description
-    relative_path: robots/tiago_full.urdf.xacro
+    relative_path: robots/tiago.urdf.xacro
   SRDF:
     relative_path: config/tiago.srdf
   CONFIG:
