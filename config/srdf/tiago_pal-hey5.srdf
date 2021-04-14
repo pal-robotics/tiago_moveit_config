@@ -33,6 +33,7 @@
     </group>
 
 
+
     <group name="hand">
         <joint name="hand_index_joint" />
         <joint name="hand_thumb_joint" />
@@ -3257,6 +3258,7 @@
     <disable_collisions link1="hand_grasping_frame" link2="hand_safety_box" reason="Never" />
     <disable_collisions link1="hand_grasping_frame" link2="hand_palm_link" reason="Never" />
     <disable_collisions link1="hand_safety_box" link2="hand_palm_link" reason="Never" />
+
 
 
 

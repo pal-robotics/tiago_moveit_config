@@ -33,6 +33,7 @@
     </group>
 
 
+
     <group name="hand">
         <joint name="hand_index_joint" />
         <joint name="hand_thumb_joint" />
@@ -3258,7 +3259,8 @@
     <disable_collisions link1="hand_grasping_frame" link2="hand_palm_link" reason="Never" />
     <disable_collisions link1="hand_safety_box" link2="hand_palm_link" reason="Never" />
 
-    
+
+        
         <!-- Disable collisions with FT sensor -->
     <disable_collisions link1="wrist_ft_link" link2="arm_tool_link" reason="Adjacent" />
     <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent" />
