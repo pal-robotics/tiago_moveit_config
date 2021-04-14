@@ -59,7 +59,7 @@
     <end_effector name="gripper" parent_link="arm_tool_link" group="gripper" parent_group="arm_torso" />
 @[end if]@
 
-@[if end_effector in ['robotiq-85', 'robotiq-140']]@
+@[if end_effector in ['robotiq-2f-85', 'robotiq-2f-140']]@
     <group name="gripper">
         <link name="gripper_coupler_link" />
         <link name="gripper_base_link" />
@@ -3434,7 +3434,7 @@
     <disable_collisions link1="hand_safety_box" link2="hand_palm_link" reason="Never" />
 @[end if]@
 
-@[if end_effector in ['robotiq-85', 'robotiq-140']]@
+@[if end_effector in ['robotiq-2f-85', 'robotiq-2f-140']]@
     <disable_collisions link1="arm_1_link" link2="gripper_base_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="gripper_coupler_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="gripper_left_inner_finger" reason="Never" />
@@ -3628,7 +3628,7 @@
 @[end if]@
 
 @[if ft_sensor == "schunk-ft"]@
-    @[if end_effector in ['robotiq-85', 'robotiq-140']]@
+    @[if end_effector in ['robotiq-2f-85', 'robotiq-2f-140']]@
     <!-- FT link disable collisions -->
     <disable_collisions link1="gripper_base_link" link2="wrist_ft_link" reason="Never" />
     <disable_collisions link1="gripper_base_link" link2="wrist_ft_tool_link" reason="Never" />
