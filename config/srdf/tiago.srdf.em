@@ -3437,6 +3437,11 @@
 @[if end_effector in ['robotiq-2f-85', 'robotiq-2f-140']]@
     <disable_collisions link1="arm_1_link" link2="gripper_base_link" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="gripper_coupler_link" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="gripper_left_inner_knuckle" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="gripper_left_outer_finger" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="gripper_right_inner_finger" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="gripper_right_inner_knuckle" reason="Never" />
+    <disable_collisions link1="arm_1_link" link2="gripper_right_outer_finger" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="gripper_left_inner_finger" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="gripper_left_inner_finger_pad" reason="Never" />
     <disable_collisions link1="arm_1_link" link2="gripper_left_inner_knuckle" reason="Never" />
@@ -3522,6 +3527,15 @@
     <disable_collisions link1="base_sonar_02_link" link2="gripper_right_inner_finger" reason="Never" />
     <disable_collisions link1="base_sonar_02_link" link2="gripper_right_outer_knuckle" reason="Never" />
     <disable_collisions link1="base_sonar_03_link" link2="gripper_coupler_link" reason="Never" />
+    <disable_collisions link1="base_sonar_01_link" link2="gripper_left_outer_knuckle" reason="Never" />
+    <disable_collisions link1="base_sonar_02_link" link2="gripper_coupler_link" reason="Never" />
+    <disable_collisions link1="base_sonar_02_link" link2="gripper_left_inner_finger_pad" reason="Never" />
+    <disable_collisions link1="base_sonar_02_link" link2="gripper_left_outer_knuckle" reason="Never" />
+    <disable_collisions link1="base_sonar_02_link" link2="gripper_right_inner_finger" reason="Never" />
+    <disable_collisions link1="base_sonar_02_link" link2="gripper_right_outer_knuckle" reason="Never" />
+    <disable_collisions link1="base_sonar_03_link" link2="gripper_coupler_link" reason="Never" />
+    <disable_collisions link1="base_sonar_03_link" link2="gripper_left_outer_finger" reason="Never" />
+    <disable_collisions link1="base_sonar_03_link" link2="gripper_right_outer_knuckle" reason="Never" />
     <disable_collisions link1="caster_back_left_1_link" link2="gripper_base_link" reason="Never" />
     <disable_collisions link1="caster_back_left_1_link" link2="gripper_coupler_link" reason="Never" />
     <disable_collisions link1="caster_back_left_1_link" link2="gripper_left_inner_finger" reason="Never" />
@@ -3548,6 +3562,7 @@
     <disable_collisions link1="caster_back_left_2_link" link2="gripper_right_outer_knuckle" reason="Never" />
     <disable_collisions link1="caster_back_right_1_link" link2="gripper_base_link" reason="Never" />
     <disable_collisions link1="caster_back_right_1_link" link2="gripper_coupler_link" reason="Never" />
+    <disable_collisions link1="caster_back_right_1_link" link2="gripper_left_inner_finger" reason="Never" />
     <disable_collisions link1="caster_back_right_1_link" link2="gripper_left_inner_finger_pad" reason="Never" />
     <disable_collisions link1="caster_back_right_1_link" link2="gripper_left_outer_knuckle" reason="Never" />
     <disable_collisions link1="caster_back_right_1_link" link2="gripper_right_inner_knuckle" reason="Never" />
