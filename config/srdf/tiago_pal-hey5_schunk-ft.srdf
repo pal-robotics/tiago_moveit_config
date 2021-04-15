@@ -754,6 +754,8 @@
     <disable_collisions link1="arm_tool_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_right_1_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_right_2_link" reason="Never" />
+    <disable_collisions link1="arm_tool_link" link2="wrist_ft_link" reason="Adjacent" />
+    <disable_collisions link1="arm_tool_link" link2="wrist_ft_tool_link" reason="Never" />
     <disable_collisions link1="torso_lift_link" link2="arm_1_link" reason="Adjacent"/>
     <disable_collisions link1="arm_1_link" link2="arm_2_link" reason="Adjacent"/>
     <disable_collisions link1="arm_2_link" link2="arm_3_link" reason="Adjacent"/>

@@ -808,6 +808,10 @@
     <disable_collisions link1="arm_tool_link" link2="caster_back_left_2_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_right_1_link" reason="Never" />
     <disable_collisions link1="arm_tool_link" link2="caster_back_right_2_link" reason="Never" />
+@[if ft_sensor == "schunk-ft"]@
+    <disable_collisions link1="arm_tool_link" link2="wrist_ft_link" reason="Adjacent" />
+    <disable_collisions link1="arm_tool_link" link2="wrist_ft_tool_link" reason="Never" />
+@[end if]@
     <disable_collisions link1="torso_lift_link" link2="arm_1_link" reason="Adjacent"/>
     <disable_collisions link1="arm_1_link" link2="arm_2_link" reason="Adjacent"/>
     <disable_collisions link1="arm_2_link" link2="arm_3_link" reason="Adjacent"/>
@@ -3645,6 +3649,15 @@
 @[if ft_sensor == "schunk-ft"]@
     @[if end_effector in ['robotiq-2f-85', 'robotiq-2f-140']]@
     <!-- FT link disable collisions -->
+    <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_tool_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_tool_link" reason="Never" />
     <disable_collisions link1="gripper_base_link" link2="wrist_ft_link" reason="Never" />
     <disable_collisions link1="gripper_base_link" link2="wrist_ft_tool_link" reason="Never" />
     <disable_collisions link1="gripper_coupler_link" link2="wrist_ft_link" reason="Never" />
