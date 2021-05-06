@@ -2,6 +2,18 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'robotiq_gripper' into 'erbium-devel'
+  Robotiq gripper
+  See merge request robots/tiago_moveit_config!22
+* update the SRDF with the missing FT links
+* Update the SRDF configuration
+* update the robotiq end effector naming
+* initial commit of robotiq 85 and 140 moveit config of TIAGo
+* Add README and update setup assistant xacro file name
+* Contributors: Sai Kishor Kothakota, Victor Lopez, saikishor
+
 1.0.6 (2020-10-01)
 ------------------
 * Merge branch 'hey5_marker' into 'erbium-devel'
