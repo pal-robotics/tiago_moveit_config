@@ -2,6 +2,9 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 1.1.0 (2021-05-06)
 ------------------
 * Merge branch 'robotiq_gripper' into 'erbium-devel'
