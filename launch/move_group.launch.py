@@ -29,7 +29,8 @@ def generate_launch_description():
         laser_model=True,
         arm=True,
         end_effector=True,
-        ft_sensor=True)
+        ft_sensor=True,
+        camera_model=True)
 
     # Command-line arguments
     sim_time_arg = DeclareLaunchArgument(
