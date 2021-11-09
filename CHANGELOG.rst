@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.2 (2021-11-09)
+------------------
 * Merge branch 'update_srdf_format' into 'erbium-devel'
   Update srdf, remove initial message
   See merge request robots/tiago_moveit_config!23
