@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.3 (2021-12-02)
+------------------
 * Merge branch 'add_base_type' into 'erbium-devel'
   Add base_type argument to the moveit launch files
   Closes tiago_dual_moveit_config#1
