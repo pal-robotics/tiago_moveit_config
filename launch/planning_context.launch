@@ -15,6 +15,7 @@
   <arg name="ft_sensor"  default="schunk-ft"/>
   <arg name="laser_model"  default="sick-571"/>
   <arg name="camera_model"  default="orbbec-astra"/>
+  <arg name="base_type"  default="pmb2"/>
   <arg name="multi" default=""/>
   <arg name="file_suffix" value="$(eval ('no-arm' if not arm else end_effector+ ('' if not ft_sensor else '_'+ft_sensor)))"/>
 
@@ -26,6 +27,7 @@
       <arg name="ft_sensor" value="$(arg ft_sensor)"/>
       <arg name="laser_model" value="$(arg laser_model)"/>
       <arg name="camera_model" value="$(arg camera_model)"/>
+      <arg name="base_type" value="$(arg base_type)"/>
       <arg name="multi"  value="$(arg multi)"/>
     </include>
     <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find tiago_description)/robots/tiago_$(arg robot).urdf.xacro' have_base_rgbd:=false"/>

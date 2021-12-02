@@ -6,6 +6,7 @@
   <arg name="ft_sensor"  default="schunk-ft"/>
   <arg name="laser_model"  default="sick-571"/>
   <arg name="camera_model"  default="orbbec-astra"/>
+  <arg name="base_type"  default="pmb2"/>
 
   <!-- Selection of kinematics solver -->
   <arg name="kinematics" value="$(optenv IK_SOLVER kdl)" />
@@ -21,6 +22,7 @@
     <arg name="ft_sensor" value="$(arg ft_sensor)"/>
     <arg name="laser_model" value="$(arg laser_model)"/>
     <arg name="camera_model" value="$(arg camera_model)"/>
+    <arg name="base_type" value="$(arg base_type)"/>
   </include>
 
   <!-- Start the database -->
