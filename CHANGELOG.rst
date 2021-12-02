@@ -2,6 +2,15 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_base_type' into 'erbium-devel'
+  Add base_type argument to the moveit launch files
+  Closes tiago_dual_moveit_config#1
+  See merge request robots/tiago_moveit_config!24
+* Add base_type argument to the moveit launch files
+* Contributors: Sai Kishor Kothakota, victor
+
 1.1.2 (2021-11-09)
 ------------------
 * Merge branch 'update_srdf_format' into 'erbium-devel'
