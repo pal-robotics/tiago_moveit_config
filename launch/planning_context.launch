@@ -20,8 +20,7 @@
   <arg name="file_suffix" value="$(eval ('no-arm' if not arm else end_effector+ ('' if not ft_sensor else '_'+ft_sensor)))"/>
 
   <!-- Load universal robot description format (URDF) -->
-  <group if="$(arg load_robot_description)">
-    <include file="$(find tiago_description)/robots/upload.launch">
+  <include if="$(arg load_robot_description)" file="$(find tiago_description)/robots/upload.launch">
       <arg name="arm" value="$(arg arm)"/>
       <arg name="end_effector" value="$(arg end_effector)"/>
       <arg name="ft_sensor" value="$(arg ft_sensor)"/>
@@ -29,9 +28,7 @@
       <arg name="camera_model" value="$(arg camera_model)"/>
       <arg name="base_type" value="$(arg base_type)"/>
       <arg name="multi"  value="$(arg multi)"/>
-    </include>
-    <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro.py '$(find tiago_description)/robots/tiago_$(arg robot).urdf.xacro' have_base_rgbd:=false"/>
-  </group>
+  </include>
 
   <!-- The semantic description that corresponds to the URDF -->
   <param if="$(eval end_effector != 'custom')" name="$(arg robot_description)_semantic" textfile="$(find tiago_moveit_config)/config/srdf/tiago_$(arg file_suffix).srdf" />
