@@ -26,7 +26,7 @@ controller_list:
       - gripper_left_finger_joint
       - gripper_right_finger_joint
 @[end if]@
-@[if end_effector == "schunk-wsg"]@
+@[if end_effector == "schunk-wsg" or end_effector == "robotiq-2f-85" or end_effector == "robotiq-2f-140" or end_effector == "robotiq-epick"]@
   - name: fake_gripper_controller
     joints:
       - gripper_finger_joint
