@@ -19,9 +19,6 @@ controller_list:
       - arm_5_joint
       - arm_6_joint
       - arm_7_joint
-  - name: fake_gripper_controller
-    joints:
-      - gripper_finger_joint
   - name: fake_head_controller
     joints:
       - head_1_joint

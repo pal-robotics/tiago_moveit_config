@@ -36,7 +36,7 @@ controller_list:
       - gripper_left_finger_joint
       - gripper_right_finger_joint
 @[end if]@
-@[if end_effector == "schunk-wsg" or end_effector == "robotiq-2f-85" or end_effector == "robotiq-2f-140" or end_effector == "robotiq-epick"]@
+@[if end_effector == "schunk-wsg" or end_effector == "robotiq-2f-85" or end_effector == "robotiq-2f-140"]@
   - name: gripper_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
