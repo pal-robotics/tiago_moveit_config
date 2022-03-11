@@ -33,6 +33,7 @@
         <link name="gripper_coupler_link" />
         <link name="gripper_base_link" />
         <link name="gripper_end_effector" />
+        <joint name="gripper_vacuum_joint" />
     </group>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector group="gripper" name="gripper" parent_group="arm_torso" parent_link="arm_tool_link" />
