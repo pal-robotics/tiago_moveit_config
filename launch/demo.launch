@@ -14,17 +14,6 @@
   <!-- By default, we are not in debug mode -->
   <arg name="debug" default="false" />
 
-  <!-- Load the URDF, SRDF and other .yaml configuration files on the param server -->
-  <include file="$(find tiago_moveit_config)/launch/planning_context.launch">
-    <arg name="load_robot_description" value="true"/>
-    <arg name="arm" value="$(arg arm)"/>
-    <arg name="end_effector" value="$(arg end_effector)"/>
-    <arg name="ft_sensor" value="$(arg ft_sensor)"/>
-    <arg name="laser_model" value="$(arg laser_model)"/>
-    <arg name="camera_model" value="$(arg camera_model)"/>
-    <arg name="base_type" value="$(arg base_type)"/>
-  </include>
-
   <!-- If needed, broadcast static tf for robot root -->
 
 
@@ -39,6 +28,13 @@
 
   <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
   <include file="$(find tiago_moveit_config)/launch/move_group.launch">
+    <arg name="load_robot_description" value="true"/>
+    <arg name="arm" value="$(arg arm)"/>
+    <arg name="end_effector" value="$(arg end_effector)"/>
+    <arg name="ft_sensor" value="$(arg ft_sensor)"/>
+    <arg name="laser_model" value="$(arg laser_model)"/>
+    <arg name="camera_model" value="$(arg camera_model)"/>
+    <arg name="base_type" value="$(arg base_type)"/>
     <arg name="allow_trajectory_execution" value="true"/>
     <arg name="fake_execution" value="true"/>
     <arg name="info" value="true"/>
