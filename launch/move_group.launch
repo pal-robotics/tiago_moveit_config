@@ -62,7 +62,13 @@
   </include>
 
   <!-- Trajectory Execution Functionality -->
-  <arg name="file_suffix" value="$(eval ('no-arm' if not arm else end_effector+ ('' if not ft_sensor else '_'+ft_sensor)))"/>
+  <arg name="file_suffix" 
+       value="$(eval (('no-arm' if not arm else
+        (end_effector if end_effector else 'no-ee') + 
+        ('_' +  ft_sensor if ft_sensor else ''))))"
+        />  
+
+
   <include ns="move_group" file="$(find tiago_moveit_config)/launch/trajectory_execution.launch.xml" if="$(arg allow_trajectory_execution)">
     <arg name="moveit_manage_controllers" value="true" />
     <arg name="moveit_controller_manager" value="tiago" unless="$(arg fake_execution)"/>
