@@ -2,6 +2,25 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'mlu/feature/omni-base-srdf' into 'erbium-devel'
+  Add SRDFs for omni_base and epick
+  See merge request robots/tiago_moveit_config!30
+* Add vacuum joint to end effector group of Robotiq EPick
+* Remove gripper_controller from the controller_manager list for epick
+* Add generated config files for epick controller
+* Add config files for epick gripper
+* Add srdf xacro and gernerated srdf for robotiq-epick gripper
+* Add SRDFs for omni_base
+* Merge branch 'mlu/fix/test-launch-files' into 'erbium-devel'
+  Fix URDF loading in planning_context.launch
+  See merge request robots/tiago_moveit_config!28
+* Fix demo.launch
+  delegate URDF/SRDF loading to move_group.launch
+* Fix URDF loading in planning_context.launch
+* Contributors: Mathias Lüdtke, saikishor, thomaspeyrucain
+
 1.1.3 (2021-12-02)
 ------------------
 * Merge branch 'add_base_type' into 'erbium-devel'
