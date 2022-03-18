@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.4 (2022-03-18)
+------------------
 * Merge branch 'mlu/feature/omni-base-srdf' into 'erbium-devel'
   Add SRDFs for omni_base and epick
   See merge request robots/tiago_moveit_config!30
