@@ -17,10 +17,12 @@
   <arg name="camera_model"  default="orbbec-astra"/>
   <arg name="base_type"  default="pmb2"/>
   <arg name="multi" default=""/>
-  <arg name="file_suffix" value="$(eval ('no-arm' if not arm else 
-                          end_effector + ('_' +  ft_sensor if ft_sensor else '') if end_effector else 
-                          'no-ee' + ('_' +  ft_sensor if ft_sensor else '')))"
-                          /> 
+  <arg name="file_suffix" 
+       value="$(eval (('no-arm' if not arm else
+        (end_effector if end_effector else 'no-ee') + 
+        ('_' +  ft_sensor if ft_sensor else ''))))"
+        />  
+
 
   <!-- Load universal robot description format (URDF) -->
   <include if="$(arg load_robot_description)" file="$(find tiago_description)/robots/upload.launch">
