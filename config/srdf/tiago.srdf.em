@@ -3803,5 +3803,19 @@
     @[end if]@
 @[end if]@
 
+@[if ft_sensor == "schunk-ft"]@
+    @[if end_effector == "no-ee"]@
+    <!-- FT link disable collisions -->
+    <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_link" link2="arm_tool_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_5_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_6_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_7_link" reason="Never" />
+    <disable_collisions link1="wrist_ft_tool_link" link2="arm_tool_link" reason="Never" />
+    @[end if]@
+@[end if]@
 
 </robot>
