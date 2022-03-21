@@ -3356,5 +3356,5 @@
     <disable_collisions link1="wrist_ft_link" link2="hand_thumb_virtual_2_link" reason="Never" />
     <disable_collisions link1="wrist_ft_link" link2="hand_safety_box" reason="Never" />
     
-
+    
 </robot>
