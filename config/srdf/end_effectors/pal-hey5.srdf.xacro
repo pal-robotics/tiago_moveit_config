@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:property name="end_effector_name" value="hand" />
+    <xacro:macro name="define_end_effector" params="arm name">
+        <group name="${name}">
+            <joint name="${name}_index_joint" />
+            <joint name="${name}_thumb_joint" />
+            <joint name="${name}_mrl_joint" />
+            <link name="${name}_index_link" />
+            <link name="${name}_thumb_link" />
+            <link name="${name}_mrl_link" />
+            <link name="${name}_palm_link" />
+        </group>
+        <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+        <end_effector name="${name}" parent_link="${arm}_tool_link" group="${name}" />
+        <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+        <passive_joint name="${name}_grasping_fixed_joint" />
+        <passive_joint name="${name}_index_abd_joint" />
+        <passive_joint name="${name}_index_flex_1_joint" />
+        <passive_joint name="${name}_index_flex_2_joint" />
+        <passive_joint name="${name}_index_flex_3_joint" />
+        <passive_joint name="${name}_index_virtual_1_joint" />
+        <passive_joint name="${name}_index_virtual_2_joint" />
+        <passive_joint name="${name}_index_virtual_3_joint" />
+        <passive_joint name="${name}_little_abd_joint" />
+        <passive_joint name="${name}_little_flex_1_joint" />
+        <passive_joint name="${name}_little_flex_2_joint" />
+        <passive_joint name="${name}_little_flex_3_joint" />
+        <passive_joint name="${name}_little_virtual_1_joint" />
+        <passive_joint name="${name}_little_virtual_2_joint" />
+        <passive_joint name="${name}_little_virtual_3_joint" />
+        <passive_joint name="${name}_middle_abd_joint" />
+        <passive_joint name="${name}_middle_flex_1_joint" />
+        <passive_joint name="${name}_middle_flex_2_joint" />
+        <passive_joint name="${name}_middle_flex_3_joint" />
+        <passive_joint name="${name}_middle_virtual_1_joint" />
+        <passive_joint name="${name}_middle_virtual_2_joint" />
+        <passive_joint name="${name}_middle_virtual_3_joint" />
+        <passive_joint name="${name}_palm_joint" />
+        <passive_joint name="${name}_ring_abd_joint" />
+        <passive_joint name="${name}_ring_flex_1_joint" />
+        <passive_joint name="${name}_ring_flex_2_joint" />
+        <passive_joint name="${name}_ring_flex_3_joint" />
+        <passive_joint name="${name}_ring_virtual_1_joint" />
+        <passive_joint name="${name}_ring_virtual_2_joint" />
+        <passive_joint name="${name}_ring_virtual_3_joint" />
+        <passive_joint name="${name}_thumb_abd_joint" />
+        <passive_joint name="${name}_thumb_flex_1_joint" />
+        <passive_joint name="${name}_thumb_flex_2_joint" />
+        <passive_joint name="${name}_thumb_virtual_1_joint" />
+        <passive_joint name="${name}_thumb_virtual_2_joint" />
+    </xacro:macro>
+</robot>
