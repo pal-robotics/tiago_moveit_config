@@ -128,7 +128,7 @@ function generate_disable_collisions_from_urdf() {
     IFS=':' read -r -a from <<< "$1"; shift
     local dc_name="disable_collisions/${name}.srdf.xacro"
     dc="$srdf_folder/$dc_name"
-    echo "dc = $dc"
+
     if [ ! -e "$dc" ]; then
         srdf="${dc%.xacro}"
         urdf="${srdf%.srdf}.urdf"
@@ -151,7 +151,6 @@ function generate_disable_collisions_from_urdf() {
 
         local pass=0
         while true; do
-            echo "inside while loop"
             local old_matrix=""
             pass=$((pass+1))
             echo
@@ -210,7 +209,6 @@ function generate_disable_collisions_subtree() {
     local name=$1; shift
     local from=$1; shift
     local target="$srdf_folder/disable_collisions/${name}.srdf.xacro"
-    echo "generate collision subtree for $name from $target"
     rosrun xacro xacro "$main_urdf_xacro" "$@" | filter_urdf "$start_link" > "/tmp/$name.urdf"
     generate_disable_collisions_from_urdf "/tmp/$name.urdf" "$name" "$from" "$@"
     echo "$(grep -v "$start_link" "$target")" > "$target"

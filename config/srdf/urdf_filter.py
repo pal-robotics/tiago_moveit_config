@@ -5,7 +5,6 @@ from xml.dom.minidom import parse, Document
 import sys
 
 def get_direct_elements(parent, tag):
-
     for e in parent.getElementsByTagName(tag):
         if e.parentNode is parent:
             yield e
@@ -25,7 +24,7 @@ for joint in get_direct_elements(robot, "joint"):
     joints.setdefault(parent, dict())[child]=joint
 
 walk = [ start_link ]
-print("Start get idirect elements")
+
 new_robot = robot.cloneNode(False)
 while walk:
     link = walk.pop(0)
