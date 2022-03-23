@@ -4,7 +4,22 @@ This package contains the MoveIt! config files for all possible TIAGo configurat
 
 To make maintenance easier, there are templates of the files that differ between configurations. To understand how this template works please read https://github.com/pal-robotics/tiago_robot/ readme.
 
+## Updating or adding support for an end effector
 
+Prequisites: xmllint, xacro, moveit_setup_assistant
+
+There is one *.srdf.xacro file in config/srdf/end_effectors for each supported end effector.
+
+These files have to provide 2 xacro elements:
+* property `end_effector_name`: eg. `gripper` or `hand`, will be passed as a prefix for all groups and links of that end effector
+*  macro `define_end_effector` (`arm`, `name`): to inject end effector-specific SRDF elements like `group`, `end_effector`, and `passive_joint`. Special care needs to be taken to rename all dependent names with `${name}` (prefix of the end effector, derived from `end_effector_name`) or `${arm}` (name of the corresponding arm, used for `end_effector`)
+
+Afterwards the SRDF files need to be regenerated (takes ~10 minutes):
+```bash
+./config/srdf/update.sh
+```
+
+The changes have to be reviewed and added/committed carefully.
 
 ## Running the setup assistant
 
