@@ -197,7 +197,7 @@ function generate_disable_collisions_from_urdf() {
             fi
             echo "$target_matrix" | make_xacro "${bases[@]}"  > "$dc"
 
-            if [ -n "$old_matrix" ]; then
+            if [ -n "$old_matrix" ] || [ -z "target_matrix" ]; then
 
                 local diff=""
                 diff="$(comm_lines -23 <(echo "$old_matrix") <(echo "$target_matrix") | sed -e 's/^  / -/')"
