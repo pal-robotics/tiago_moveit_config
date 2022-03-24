@@ -163,6 +163,7 @@
     <disable_collisions link1="arm_4_link" link2="arm_7_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="arm_tool_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="base_antenna_left_link" reason="Never" />
+    <disable_collisions link1="arm_4_link" link2="base_antenna_right_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="base_dock_link" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="base_footprint" reason="Never" />
     <disable_collisions link1="arm_4_link" link2="base_front_laser_link" reason="Never" />
@@ -571,6 +572,7 @@
     <disable_collisions link1="gripper_link" link2="gripper_tool_link" reason="Never" />
     <disable_collisions link1="gripper_link" link2="rgbd_laser_link" reason="Never" />
     <disable_collisions link1="gripper_link" link2="virtual_base_laser_link" reason="Never" />
+    <disable_collisions link1="gripper_link" link2="wheel_rear_left_link" reason="Never" />
     <disable_collisions link1="gripper_link" link2="xtion_depth_frame" reason="Never" />
     <disable_collisions link1="gripper_link" link2="xtion_depth_optical_frame" reason="Never" />
     <disable_collisions link1="gripper_link" link2="xtion_link" reason="Never" />
