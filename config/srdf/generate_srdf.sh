@@ -157,6 +157,7 @@ function generate_disable_collisions_from_urdf() {
             echo "Pass $pass with $trials trials for '$dc_name'"
 
            if [ -e "$dc" ]; then
+                echo "file exists"
                 old_matrix="$(extract_matrix < "$dc")"
             fi
             # Create initial SRDF from URDF
@@ -173,17 +174,35 @@ function generate_disable_collisions_from_urdf() {
 
             # If variant is derived from another one, only keep the additional link pairs
             local target_matrix=""
+            echo "base_matrix"
+            echo "$base_matrix"
+
             target_matrix="$(comm_lines -23 <(extract_matrix < "$srdf") <(echo "$base_matrix"))"
 
+            echo "target_matrix"
+            echo $target_matrix
+
+            echo " old_matrix"
+            echo "$old_matrix"
+
             if [ -n "$old_matrix" ]; then
+                echo " old_matrix has been modified"
                 # keep only pairs which are in old and new matrix (truly never colliding)
                 target_matrix=$(comm_lines -12 <(echo "$target_matrix") <(echo "$old_matrix"))
+            echo " neW target_matrix"
+            echo "$target_matrix"
+
+            else
+                echo "old_matrix has not been modified"
             fi
             echo "$target_matrix" | make_xacro "${bases[@]}"  > "$dc"
 
             if [ -n "$old_matrix" ]; then
+
                 local diff=""
                 diff="$(comm_lines -23 <(echo "$old_matrix") <(echo "$target_matrix") | sed -e 's/^  / -/')"
+
+                echo "diff"
                 if [ -n "$diff" ]; then
                     echo "Difference:"
                     echo "$diff"

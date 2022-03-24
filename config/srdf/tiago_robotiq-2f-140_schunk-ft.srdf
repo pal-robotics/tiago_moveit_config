@@ -335,6 +335,7 @@
     <disable_collisions link1="arm_6_link" link2="caster_back_right_1_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="caster_back_right_2_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="caster_front_left_1_link" reason="Never" />
+    <disable_collisions link1="arm_6_link" link2="caster_front_left_2_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="caster_front_right_1_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="gripper_base_link" reason="Never" />
     <disable_collisions link1="arm_6_link" link2="gripper_coupler_link" reason="Never" />
@@ -1087,6 +1088,7 @@
     <disable_collisions link1="caster_back_left_2_link" link2="caster_front_right_1_link" reason="Never" />
     <disable_collisions link1="caster_back_left_2_link" link2="caster_front_right_2_link" reason="Never" />
     <disable_collisions link1="caster_back_left_2_link" link2="gripper_coupler_link" reason="Never" />
+    <disable_collisions link1="caster_back_left_2_link" link2="gripper_right_outer_knuckle" reason="Never" />
     <disable_collisions link1="caster_back_left_2_link" link2="head_1_link" reason="Never" />
     <disable_collisions link1="caster_back_left_2_link" link2="head_2_link" reason="Never" />
     <disable_collisions link1="caster_back_left_2_link" link2="rgbd_laser_link" reason="Never" />
