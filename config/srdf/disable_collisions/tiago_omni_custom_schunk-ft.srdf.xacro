@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="tiago" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/tiago_omni_no-ee_schunk-ft.srdf.xacro" />
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/custom_schunk-ft.srdf.xacro" />
+  <disable_collisions link1="arm_1_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_2_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_3_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_4_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_5_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_6_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_7_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="arm_tool_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="base_footprint" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="base_front_laser_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="base_imu_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="base_rear_laser_link" link2="cee_tool_link" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="rgbd_laser_link" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="suspension_rear_left_link" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="suspension_rear_right_link" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="virtual_base_laser_link" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_depth_frame" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_depth_optical_frame" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_link" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_optical_frame" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_orbbec_aux_joint_frame" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_rgb_frame" reason="Never"/>
+  <disable_collisions link1="cee_tool_link" link2="xtion_rgb_optical_frame" reason="Never"/>
+</robot>
