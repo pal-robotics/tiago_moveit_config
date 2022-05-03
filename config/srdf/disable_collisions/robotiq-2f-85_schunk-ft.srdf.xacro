@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<robot name="tiago" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/robotiq-2f-85.srdf.xacro" />
+  <disable_collisions link1="gripper_base_link" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_base_link" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_coupler_link" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_coupler_link" link2="wrist_ft_tool_link" reason="Adjacent"/>
+  <disable_collisions link1="gripper_left_inner_finger" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_inner_finger" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_inner_finger_pad" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_inner_finger_pad" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_inner_knuckle" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_inner_knuckle" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_outer_finger" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_outer_finger" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_outer_knuckle" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_left_outer_knuckle" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_inner_finger" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_inner_finger" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_inner_finger_pad" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_inner_finger_pad" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_inner_knuckle" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_inner_knuckle" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_outer_finger" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_outer_finger" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_outer_knuckle" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_right_outer_knuckle" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent"/>
+</robot>

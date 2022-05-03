@@ -3,6 +3,6 @@ moveit_setup_assistant_config:
     package: tiago_description
     relative_path: robots/tiago.urdf.xacro
   SRDF:
-    relative_path: config/tiago.srdf
+    relative_path: config/srdf/tiago.srdf.xacro
   CONFIG:
     generated_timestamp: 1416393279
