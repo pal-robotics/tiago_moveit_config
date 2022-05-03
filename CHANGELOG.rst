@@ -2,6 +2,34 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'no-end-effector-bugfix' into 'erbium-devel'
+  No end effector bugfix
+  See merge request robots/tiago_moveit_config!31
+* file_suffix consistency
+* remove redundant files
+* update
+* fix empty target matrxi bug
+* Fix generation of  empty collision matrices
+* wip for while loop
+* Updated srdf with new update.sh script
+* Add srdf scirtps from mathias
+* small update
+* Update missing ft_sensor links in srdf
+* some changes
+* update eval function with no end-effector
+* fix empty target matrxi bug
+* Fix generation of  empty collision matrices
+* wip for while loop
+* Updated srdf with new update.sh script
+* Add srdf scirtps from mathias
+* small update
+* Update missing ft_sensor links in srdf
+* some changes
+* update eval function with no end-effector
+* Contributors: David ter Kuile, mathiasluedtke, saikishor
+
 1.1.4 (2022-03-18)
 ------------------
 * Merge branch 'mlu/feature/omni-base-srdf' into 'erbium-devel'
