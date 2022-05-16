@@ -1,3 +1,4 @@
+default_velocity_scaling_factor: 1.0
 joint_limits:
   arm_2_joint:
     has_velocity_limits: true
