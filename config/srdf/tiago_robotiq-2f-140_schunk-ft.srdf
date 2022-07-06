@@ -1337,6 +1337,7 @@
     <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_left_outer_finger" reason="Never" />
     <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_left_outer_knuckle" reason="Never" />
     <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_right_inner_finger" reason="Never" />
+    <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_right_inner_finger_pad" reason="Never" />
     <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_right_inner_knuckle" reason="Never" />
     <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_right_outer_finger" reason="Never" />
     <disable_collisions link1="gripper_left_inner_finger_pad" link2="gripper_right_outer_knuckle" reason="Never" />

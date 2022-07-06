@@ -58,10 +58,45 @@ function filter_urdf() {
     "python$ROS_PYTHON_VERSION" "$this_folder/urdf_filter.py" /dev/stdin "$@"
 }
 
+function extract_clean_matrix() {
+    sort_links | extract_matrix | sed -e 's/( *)</  </'
+}
+
+
 function make_mandatory_disable_collisions() {
     local mandatory=""
     mandatory="$("python$ROS_PYTHON_VERSION" "$this_folder/urdf_to_disable_collisions.py" /dev/stdin 2> /dev/null | extract_matrix)"
     comm_lines -23 <(echo "$mandatory") <(grep Adjacent <<< "$mandatory" | sed -e 's/Adjacent/Never/' | sort -u)
+}
+
+function filter_matrix() {
+    grep "link1=\"$1.*link2=\"$1" || true
+}
+
+function diff_matrix() {
+    local new; new=$(extract_clean_matrix < "$3" | filter_matrix "$4")
+    comm_lines $1 <(extract_clean_matrix < "$2" | filter_matrix "$4") <(echo -n "$new") | grep -v -F -f <(sed 's;reason=.*;;' <<< "$new") || true
+}
+
+function add_matrix_to_xacro() {
+    local orig
+    orig=$(grep -v "</robot>" $1)
+    local diff
+    diff=$(diff_matrix -23 "$2" <(echo "$orig"))
+    if [ -n "$diff" ]; then
+        echo "$1"
+        echo "${diff}"
+        { echo "${orig}"; echo "${diff}"; echo "</robot>"; } | sort_srdf > "$1"
+    fi
+}
+
+function add_diff_matrix_to_xacro_from_ref() {
+    local from_git
+    from_git=$(cd "$srdf_folder" && git cat-file -p "$1:./$2")
+    if [ -n "$from_git" ]; then
+        echo "Updating $4 from $2 ($1)"
+        add_matrix_to_xacro "$srdf_folder/$4" <(diff_matrix -23 <(echo "$from_git") "$srdf_folder/$2" "$3")
+    fi
 }
 
 function resolve_includes() {
@@ -115,6 +150,7 @@ function sort_srdf() {
             echo "$line"
         fi
     done
+    echo -n "$disable_collisions" | sort -u
 }
 
 function make_srdf() {
