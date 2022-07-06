@@ -4,9 +4,15 @@ main_srdf_xacro=${1?please provide path to main srdf.xacro}
 robot=$(basename "$main_srdf_xacro" ".srdf.xacro")
 srdf_folder=$(dirname "$main_srdf_xacro")
 srdf_pkg="${robot}_moveit_config"
-description_folder=$(rospack find "$robot"_description)
-main_urdf_xacro="$description_folder/robots/${robot}.urdf.xacro"
 trials=${trials-100000}
+
+function get_main_urdf_xacro() {
+    if [ -z "$main_urdf_xacro" ]; then
+        description_folder=$(rospack find "$robot"_description)
+        main_urdf_xacro="$description_folder/robots/${robot}.urdf.xacro"
+    fi
+    echo "$main_urdf_xacro"
+}
 
 function find_file() {
     if [[ $1 =~ '$(find '(.*)')/'(.*)$ ]]; then
@@ -139,7 +145,9 @@ function generate_disable_collisions_from_urdf() {
 
         local bases=()
         for f in "${from[@]}"; do
-            bases+=("$(ref_file "$f")")
+            if [ -n "$f" ]; then
+                bases+=("$(ref_file "$f")")
+            fi
         done
 
         local base_matrix=""
@@ -210,10 +218,13 @@ function generate_disable_collisions_subtree() {
     local name=$1; shift
     local from=$1; shift
     local target="$srdf_folder/disable_collisions/${name}.srdf.xacro"
-    rosrun xacro xacro "$main_urdf_xacro" "$@" | filter_urdf "$start_link" > "/tmp/$name.urdf"
-    generate_disable_collisions_from_urdf "/tmp/$name.urdf" "$name" "$from" "$@"
-    echo "$(grep -v "$start_link" "$target")" > "$target"
-    rm -rf "/tmp/$name.urdf"
+
+    if [ ! -e "$srdf_folder/disable_collisions/${name}.srdf.xacro" ]; then
+        rosrun xacro xacro "$(get_main_urdf_xacro)" "$@" | filter_urdf "$start_link" > "/tmp/$name.urdf"
+        generate_disable_collisions_from_urdf "/tmp/$name.urdf" "$name" "$from" "$@"
+        echo "$(grep -v grep -v "\"$start_link\"") "$target")" > "$target"
+        rm -rf "/tmp/$name.urdf"
+    fi
 }
 
 ## generate disable_collisions for given variant
@@ -223,7 +234,7 @@ function generate_disable_collisions_subtree() {
 ## @param xacro_args: xacro arguments
 ##
 function generate_disable_collisions() {
-    generate_disable_collisions_from_urdf "$main_urdf_xacro" "$@"
+    generate_disable_collisions_from_urdf "$(get_main_urdf_xacro)" "$@"
 }
 
 ## generate SRDF for given variant
