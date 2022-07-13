@@ -123,6 +123,7 @@
     <disable_collisions link1="base_footprint" link2="xtion_rgb_optical_frame" reason="Never" />
     <disable_collisions link1="base_front_laser_link" link2="base_imu_link" reason="Never" />
     <disable_collisions link1="base_front_laser_link" link2="base_link" reason="Adjacent" />
+    <disable_collisions link1="base_front_laser_link" link2="base_rear_laser_link" reason="Never" />
     <disable_collisions link1="base_front_laser_link" link2="head_1_link" reason="Never" />
     <disable_collisions link1="base_front_laser_link" link2="head_2_link" reason="Never" />
     <disable_collisions link1="base_front_laser_link" link2="rgbd_laser_link" reason="Never" />

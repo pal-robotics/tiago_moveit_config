@@ -4,9 +4,15 @@ main_srdf_xacro=${1?please provide path to main srdf.xacro}
 robot=$(basename "$main_srdf_xacro" ".srdf.xacro")
 srdf_folder=$(dirname "$main_srdf_xacro")
 srdf_pkg="${robot}_moveit_config"
-description_folder=$(rospack find "$robot"_description)
-main_urdf_xacro="$description_folder/robots/${robot}.urdf.xacro"
 trials=${trials-100000}
+
+function get_main_urdf_xacro() {
+    if [ -z "$main_urdf_xacro" ]; then
+        description_folder=$(rospack find "$robot"_description)
+        main_urdf_xacro="$description_folder/robots/${robot}.urdf.xacro"
+    fi
+    echo "$main_urdf_xacro"
+}
 
 function find_file() {
     if [[ $1 =~ '$(find '(.*)')/'(.*)$ ]]; then
@@ -52,10 +58,45 @@ function filter_urdf() {
     "python$ROS_PYTHON_VERSION" "$this_folder/urdf_filter.py" /dev/stdin "$@"
 }
 
+function extract_clean_matrix() {
+    sort_links | extract_matrix | sed -e 's/( *)</  </'
+}
+
+
 function make_mandatory_disable_collisions() {
     local mandatory=""
     mandatory="$("python$ROS_PYTHON_VERSION" "$this_folder/urdf_to_disable_collisions.py" /dev/stdin 2> /dev/null | extract_matrix)"
     comm_lines -23 <(echo "$mandatory") <(grep Adjacent <<< "$mandatory" | sed -e 's/Adjacent/Never/' | sort -u)
+}
+
+function filter_matrix() {
+    grep "link1=\"$1.*link2=\"$1" || true
+}
+
+function diff_matrix() {
+    local new; new=$(extract_clean_matrix < "$3" | filter_matrix "$4")
+    comm_lines $1 <(extract_clean_matrix < "$2" | filter_matrix "$4") <(echo -n "$new") | grep -v -F -f <(sed 's;reason=.*;;' <<< "$new") || true
+}
+
+function add_matrix_to_xacro() {
+    local orig
+    orig=$(grep -v "</robot>" $1)
+    local diff
+    diff=$(diff_matrix -23 "$2" <(echo "$orig"))
+    if [ -n "$diff" ]; then
+        echo "$1"
+        echo "${diff}"
+        { echo "${orig}"; echo "${diff}"; echo "</robot>"; } | sort_srdf > "$1"
+    fi
+}
+
+function add_diff_matrix_to_xacro_from_ref() {
+    local from_git
+    from_git=$(cd "$srdf_folder" && git cat-file -p "$1:./$2")
+    if [ -n "$from_git" ]; then
+        echo "Updating $4 from $2 ($1)"
+        add_matrix_to_xacro "$srdf_folder/$4" <(diff_matrix -23 <(echo "$from_git") "$srdf_folder/$2" "$3")
+    fi
 }
 
 function resolve_includes() {
@@ -109,6 +150,7 @@ function sort_srdf() {
             echo "$line"
         fi
     done
+    echo -n "$disable_collisions" | sort -u
 }
 
 function make_srdf() {
@@ -139,7 +181,9 @@ function generate_disable_collisions_from_urdf() {
 
         local bases=()
         for f in "${from[@]}"; do
-            bases+=("$(ref_file "$f")")
+            if [ -n "$f" ]; then
+                bases+=("$(ref_file "$f")")
+            fi
         done
 
         local base_matrix=""
@@ -210,10 +254,13 @@ function generate_disable_collisions_subtree() {
     local name=$1; shift
     local from=$1; shift
     local target="$srdf_folder/disable_collisions/${name}.srdf.xacro"
-    rosrun xacro xacro "$main_urdf_xacro" "$@" | filter_urdf "$start_link" > "/tmp/$name.urdf"
-    generate_disable_collisions_from_urdf "/tmp/$name.urdf" "$name" "$from" "$@"
-    echo "$(grep -v "$start_link" "$target")" > "$target"
-    rm -rf "/tmp/$name.urdf"
+
+    if [ ! -e "$srdf_folder/disable_collisions/${name}.srdf.xacro" ]; then
+        rosrun xacro xacro "$(get_main_urdf_xacro)" "$@" | filter_urdf "$start_link" > "/tmp/$name.urdf"
+        generate_disable_collisions_from_urdf "/tmp/$name.urdf" "$name" "$from" "$@"
+        echo "$(grep -v grep -v "\"$start_link\"") "$target")" > "$target"
+        rm -rf "/tmp/$name.urdf"
+    fi
 }
 
 ## generate disable_collisions for given variant
@@ -223,7 +270,7 @@ function generate_disable_collisions_subtree() {
 ## @param xacro_args: xacro arguments
 ##
 function generate_disable_collisions() {
-    generate_disable_collisions_from_urdf "$main_urdf_xacro" "$@"
+    generate_disable_collisions_from_urdf "$(get_main_urdf_xacro)" "$@"
 }
 
 ## generate SRDF for given variant
