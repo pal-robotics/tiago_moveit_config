@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.1 (2022-07-13)
+------------------
 * Merge branch 'mlu/fix/hey5-srdf' into 'erbium-devel'
   Merge missing disable collision pairs
   See merge request robots/tiago_moveit_config!34
