@@ -16,7 +16,7 @@ These files have to provide 2 xacro elements:
 
 Afterwards the SRDF files need to be regenerated (takes ~10 minutes):
 ```bash
-./config/srdf/update.sh
+./config/srdf/scripts/update.sh
 ```
 
 The changes have to be reviewed and added/committed carefully.
