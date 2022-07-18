@@ -6,7 +6,7 @@ To make maintenance easier, there are templates of the files that differ between
 
 ## Updating or adding support for an end effector
 
-Prequisites: xmllint, xacro, moveit_setup_assistant
+Prequisites: pal_moveit_config_generator
 
 There is one *.srdf.xacro file in config/srdf/end_effectors for each supported end effector.
 

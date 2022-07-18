@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 ulimit -m 8048000
-this_folder=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-source "$this_folder/generate_srdf.sh" "$this_folder/tiago.srdf.xacro"
+source "$(rospack find pal_moveit_config_generator)/srdf_utils.sh" "$(dirname "${BASH_SOURCE[0]}")/config/srdf/tiago.srdf.xacro"
 
 # crawl all end effectors and generate the corresponding subtree SRDF
 for end_effector_file in "$srdf_folder"/end_effectors/*.srdf.xacro; do
