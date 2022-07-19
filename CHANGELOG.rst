@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.2 (2022-07-19)
+------------------
 * Merge branch 'mlu/fix/move-scripts-out' into 'erbium-devel'
   Use pal_moveit_config_generator
   See merge request robots/tiago_moveit_config!36
