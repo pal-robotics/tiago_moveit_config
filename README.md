@@ -6,7 +6,7 @@ To make maintenance easier, there are templates of the files that differ between
 
 ## Updating or adding support for an end effector
 
-Prequisites: xmllint, xacro, moveit_setup_assistant
+Prequisites: pal_moveit_config_generator
 
 There is one *.srdf.xacro file in config/srdf/end_effectors for each supported end effector.
 
@@ -16,7 +16,7 @@ These files have to provide 2 xacro elements:
 
 Afterwards the SRDF files need to be regenerated (takes ~10 minutes):
 ```bash
-./config/srdf/update.sh
+./config/srdf/scripts/update.sh
 ```
 
 The changes have to be reviewed and added/committed carefully.
