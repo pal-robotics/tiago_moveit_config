@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.3 (2022-08-01)
+------------------
 * Merge branch 'gallium-fix' into 'erbium-devel'
   Add default_velocity_scaling_factor to avoid slow movements
   See merge request robots/tiago_moveit_config!32
