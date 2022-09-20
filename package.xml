@@ -9,7 +9,7 @@
   <maintainer email="jordan.palacios@pal-robotics.com">Jordan Palacios</maintainer>
   <maintainer email="noel.jimenez@pal-robotics.com">Noel Jimenez</maintainer>
 
-  <license>BSD</license>
+  <license>Apache License 2.0</license>
 
   <url type="website">http://moveit.ros.org/</url>
   <url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url>
