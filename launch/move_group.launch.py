@@ -109,10 +109,10 @@ def generate_launch_description():
         ],
     )
 
-    return LaunchDescription(
-        [
-            *tiago_args,
-            sim_time_arg,
-            run_move_group_node,
-        ]
-    )
+    ld = LaunchDescription()
+
+    ld.add_action(*tiago_args)
+    ld.add_action(sim_time_arg)
+    ld.add_action(run_move_group_node)
+
+    return ld

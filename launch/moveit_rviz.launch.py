@@ -76,10 +76,9 @@ def generate_launch_description():
         ],
     )
 
-    return LaunchDescription(
-        [
-            *tiago_args,
-            rviz_node,
-        ]
-    )
+    ld = LaunchDescription()
 
+    ld.add_action(*tiago_args)
+    ld.add_action(rviz_node)
+
+    return ld
