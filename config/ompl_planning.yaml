@@ -1,3 +1,12 @@
+planning_plugin: ompl_interface/OMPLPlanner
+request_adapters: >-
+  default_planner_request_adapters/AddTimeOptimalParameterization
+  default_planner_request_adapters/ResolveConstraintFrames
+  default_planner_request_adapters/FixWorkspaceBounds
+  default_planner_request_adapters/FixStartStateBounds
+  default_planner_request_adapters/FixStartStateCollision
+  default_planner_request_adapters/FixStartStatePathConstraints
+start_state_max_bounds_error: 0.1
 planner_configs:
   SBLkConfigDefault:
     type: geometric::SBL
@@ -21,6 +30,32 @@ planner_configs:
     type: geometric::PRM
   PRMstarkConfigDefault:
     type: geometric::PRMstar
+  FMTkConfigDefault:
+    type: geometric::FMT
+  BFMTkConfigDefault:
+    type: geometric::BFMT
+  PDSTkConfigDefault:
+    type: geometric::PDST
+  STRIDEkConfigDefault:
+    type: geometric::STRIDE
+  BiTRRTkConfigDefault:
+    type: geometric::BiTRRT
+  LBTRRTkConfigDefault:
+    type: geometric::LBTRRT
+  BiESTkConfigDefault:
+    type: geometric::BiEST
+  ProjESTkConfigDefault:
+    type: geometric::ProjEST
+  LazyPRMkConfigDefault:
+    type: geometric::LazyPRM
+  LazyPRMstarkConfigDefault:
+    type: geometric::LazyPRMstar
+  SPARSkConfigDefault:
+    type: geometric::SPARS
+  SPARStwokConfigDefault:
+    type: geometric::SPARStwo
+  TrajOptDefault:
+    type: geometric::TrajOpt
 arm_torso:
   planner_configs:
     - SBLkConfigDefault
@@ -34,6 +69,19 @@ arm_torso:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
+    - FMTkConfigDefault
+    - BFMTkConfigDefault
+    - PDSTkConfigDefault
+    - STRIDEkConfigDefault
+    - BiTRRTkConfigDefault
+    - LBTRRTkConfigDefault
+    - BiESTkConfigDefault
+    - ProjESTkConfigDefault
+    - LazyPRMkConfigDefault
+    - LazyPRMstarkConfigDefault
+    - SPARSkConfigDefault
+    - SPARStwokConfigDefault
+    - TrajOptDefault
   projection_evaluator: joints(torso_lift_joint,arm_1_joint)
   longest_valid_segment_fraction: 0.01
 arm:
@@ -49,5 +97,18 @@ arm:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
+    - FMTkConfigDefault
+    - BFMTkConfigDefault
+    - PDSTkConfigDefault
+    - STRIDEkConfigDefault
+    - BiTRRTkConfigDefault
+    - LBTRRTkConfigDefault
+    - BiESTkConfigDefault
+    - ProjESTkConfigDefault
+    - LazyPRMkConfigDefault
+    - LazyPRMstarkConfigDefault
+    - SPARSkConfigDefault
+    - SPARStwokConfigDefault
+    - TrajOptDefault
   projection_evaluator: joints(arm_1_joint, arm_2_joint)
   longest_valid_segment_fraction: 0.01
