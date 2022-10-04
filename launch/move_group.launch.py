@@ -14,10 +14,10 @@
 
 import os
 
+from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
-from launch_ros.actions import Node
 from launch_pal.arg_utils import read_launch_argument
 from launch_pal.robot_utils import (get_arm,
                                     get_camera_model,
@@ -26,10 +26,10 @@ from launch_pal.robot_utils import (get_arm,
                                     get_laser_model,
                                     get_robot_name,
                                     get_wrist_model)
-from ament_index_python.packages import get_package_share_directory
+from launch_ros.actions import Node
 
-from tiago_description.tiago_launch_utils import get_tiago_hw_suffix
 from moveit_configs_utils import MoveItConfigsBuilder
+from tiago_description.tiago_launch_utils import get_tiago_hw_suffix
 
 
 def declare_args(context, *args, **kwargs):
@@ -48,7 +48,7 @@ def declare_args(context, *args, **kwargs):
 def launch_setup(context, *args, **kwargs):
 
     arm = read_launch_argument('arm', context)
-    camera_model =  read_launch_argument('camera_model', context)
+    camera_model = read_launch_argument('camera_model', context)
     end_effector = read_launch_argument('end_effector', context)
     ft_sensor = read_launch_argument('ft_sensor', context)
     laser_model = read_launch_argument('laser_model', context)
@@ -56,7 +56,7 @@ def launch_setup(context, *args, **kwargs):
 
     robot_description_path = os.path.join(
         get_package_share_directory('tiago_description'), 'robots', 'tiago.urdf.xacro')
-    
+
     mappings = {
         'arm': arm,
         'camera_model': camera_model,
@@ -66,43 +66,42 @@ def launch_setup(context, *args, **kwargs):
         'wrist_model': wrist_model,
     }
 
-    robot_description_semantic = ("config/srdf/tiago_" + 
-        get_tiago_hw_suffix(arm=arm, wrist_model=None, end_effector=end_effector, ft_sensor=ft_sensor) + 
-        ".srdf")
+    robot_description_semantic = ('config/srdf/tiago_' + get_tiago_hw_suffix(
+        arm=arm, wrist_model=None, end_effector=end_effector, ft_sensor=ft_sensor) + '.srdf')
 
     # Trajectory Execution Functionality
     moveit_simple_controllers_path = (
-        "config/controllers/controllers_" +
+        'config/controllers/controllers_' +
         get_tiago_hw_suffix(arm=arm, wrist_model=None,
-                            end_effector=end_effector, ft_sensor=ft_sensor) + ".yaml")
+                            end_effector=end_effector, ft_sensor=ft_sensor) + '.yaml')
 
     planning_scene_monitor_parameters = {
-        "publish_planning_scene": True,
-        "publish_geometry_updates": True,
-        "publish_state_updates": True,
-        "publish_transforms_updates": True,
+        'publish_planning_scene': True,
+        'publish_geometry_updates': True,
+        'publish_state_updates': True,
+        'publish_transforms_updates': True,
     }
 
     use_sim_time = {
-        "use_sim_time": LaunchConfiguration("use_sim_time")
+        'use_sim_time': LaunchConfiguration('use_sim_time')
     }
 
     moveit_config = (
-        MoveItConfigsBuilder("tiago")
+        MoveItConfigsBuilder('tiago')
         .robot_description(file_path=robot_description_path, mappings=mappings)
         .robot_description_semantic(file_path=robot_description_semantic)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics_kdl.yaml'))
         .trajectory_execution(moveit_simple_controllers_path)
-        .planning_pipelines(pipelines=["ompl"])
+        .planning_pipelines(pipelines=['ompl'])
         .planning_scene_monitor(planning_scene_monitor_parameters)
         .to_moveit_configs()
     )
 
     # Start the actual move_group node/action server
     run_move_group_node = Node(
-        package="moveit_ros_move_group",
-        executable="move_group",
-        output="screen",
+        package='moveit_ros_move_group',
+        executable='move_group',
+        output='screen',
         parameters=[
             use_sim_time,
             moveit_config.to_dict(),
@@ -115,14 +114,14 @@ def launch_setup(context, *args, **kwargs):
 def generate_launch_description():
     # Command-line arguments
     sim_time_arg = DeclareLaunchArgument(
-        "use_sim_time", default_value="True", description="Use sim time"
+        'use_sim_time', default_value='True', description='Use sim time'
     )
 
     ld = LaunchDescription()
 
     # Declare arguments
     # we use OpaqueFunction so the callbacks have access to the context
-    ld.add_action(get_robot_name("tiago"))
+    ld.add_action(get_robot_name('tiago'))
     ld.add_action(OpaqueFunction(function=declare_args))
     ld.add_action(sim_time_arg)
 
