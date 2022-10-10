@@ -5,8 +5,12 @@ project(tiago_moveit_config)
 find_package(ament_cmake_pal QUIET)
 find_package(ament_cmake REQUIRED)
 
-ament_package()
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
+ament_package()
 
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}
   PATTERN "setup_assistant.launch.py" EXCLUDE)
