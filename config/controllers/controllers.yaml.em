@@ -1,4 +1,4 @@
-moveit_controller_manager: moveit_ros_control_interface/MoveItControllerManager
+moveit_controller_manager: moveit_ros_control_interface/Ros2ControlManager
 moveit_simple_controller_manager:
   controller_names:
 @[if has_arm]@
