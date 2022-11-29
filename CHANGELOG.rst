@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.0 (2022-11-29)
+------------------
 * Merge pull request #11 from AndyZe/andyz/cm_update
   [Humble] Update the ControllerManger name
 * Update in the .em file as well
