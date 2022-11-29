@@ -2,6 +2,68 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request #11 from AndyZe/andyz/cm_update
+  [Humble] Update the ControllerManger name
+* Update in the .em file as well
+* Update the Controller Manager name
+* Merge branch 'add_missing_dependencies' into 'humble-devel'
+  Add missing dependencies
+  See merge request robots/tiago_moveit_config!46
+* add missing dependencies
+* Merge branch 'update_rviz_cfg' into 'humble-devel'
+  Update rviz config
+  See merge request robots/tiago_moveit_config!45
+* update rviz cfg
+* Merge branch 'cleanup' into 'humble-devel'
+  update pkg deps
+  See merge request robots/tiago_moveit_config!44
+* update pkg deps
+* Merge branch 'linters' into 'humble-devel'
+  Linters
+  See merge request robots/tiago_moveit_config!43
+* linters
+* copyright
+* CONTRIBUTING.md
+* add linters
+* Merge branch 'update_launchers' into 'humble-devel'
+  Update moveit launchers refactor
+  See merge request robots/tiago_moveit_config!42
+* update config and use MoveItConfigsBuilder for launchers
+* regenerate controller yaml files
+* rm name to avoid duplicated node
+* update moveit launchers refactor
+* Merge branch 'refactor_ld' into 'humble-devel'
+  Refactor LaunchDescription population
+  See merge request robots/tiago_moveit_config!41
+* refactor LaunchDescription population
+* Merge branch 'license' into 'humble-devel'
+  Add Apache License
+  See merge request robots/tiago_moveit_config!40
+* add LICENSE
+* Merge branch 'cleanup' into 'humble-devel'
+  Cleanup
+  See merge request robots/tiago_moveit_config!39
+* rm ros1 launchers
+* Merge branch 'update_maintainers' into 'humble-devel'
+  update maintainers
+  See merge request robots/tiago_moveit_config!38
+* update maintainers
+* Merge branch 'separate_rviz_and_move_group' into 'foxy-devel'
+  Separate rviz from move group launcher
+  See merge request robots/tiago_moveit_config!33
+* separate rviz from move_group launcher
+* Update rviz config
+* Add camera_model to description generator
+* Style and cleanup
+* Use rviz in this repo
+* Update move_group for all tiago configurations
+* Fix controllers and srdf generation
+* Regenerate srdf and controllers for ROS2
+* Initial hard coded ROS2 version
+* Contributors: AndyZe, Jordan Palacios, Noel Jimenez, Noel Jimenez Garcia, Sai Kishor Kothakota, Victor Lopez
+
 1.1.1 (2021-05-06)
 ------------------
 
