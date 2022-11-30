@@ -23,7 +23,7 @@
 #    filtered_cloud_topic: output_cloud
 
 sensors:
-  - sensor_plugin: occupancy_map_monitor/PalPointCloudOctomapUpdater
+  - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
     point_cloud_topic: /throttle_filtering_points/filtered_points
     max_range: 2.0
     point_subsample: 1
