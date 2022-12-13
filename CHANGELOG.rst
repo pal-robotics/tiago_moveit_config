@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.4 (2022-12-13)
+------------------
 * Merge branch 'extra-moveit-capabilities' into 'erbium-devel'
   Extra moveit capabilities
   See merge request robots/tiago_moveit_config!47
