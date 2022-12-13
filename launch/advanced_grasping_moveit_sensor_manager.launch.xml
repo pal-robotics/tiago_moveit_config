@@ -1,0 +1,9 @@
+<launch>
+
+  <rosparam command="load" file="$(find tiago_moveit_config)/config/advanced_grasping_sensors_rgbd.yaml" />
+
+  <param name="octomap_frame" type="string" value="odom" />
+  <param name="octomap_resolution" type="double" value="0.05" />
+  <param name="max_range" type="double" value="5.0" />
+
+</launch>

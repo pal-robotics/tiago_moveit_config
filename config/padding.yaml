@@ -1,0 +1,2 @@
+# parameters for padded robot (not used for self collision checks)
+default_robot_link_padding: {   "arm_5_link"    :  0.01 }

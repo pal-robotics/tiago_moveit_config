@@ -10,6 +10,7 @@
   <!-- Use moveit camera manager -->
   <arg name="camera"  default="false"/>
   <arg name="base_type"  default="pmb2"/>
+  <arg name="moveit_sensor_manager" default="tiago"/>
 
   <include file="$(find tiago_moveit_config)/launch/planning_context.launch">
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
@@ -79,7 +80,7 @@
   <!-- Sensors Functionality -->
   <group if="$(arg camera)">
     <include ns="move_group" file="$(find tiago_moveit_config)/launch/sensor_manager.launch.xml" if="$(arg allow_trajectory_execution)">
-      <arg name="moveit_sensor_manager" value="tiago" />
+      <arg name="moveit_sensor_manager" value="$(arg moveit_sensor_manager)"/>
     </include>
   </group>
 

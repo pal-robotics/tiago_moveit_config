@@ -34,6 +34,13 @@
   <param if="$(eval end_effector != 'custom')" name="$(arg robot_description)_semantic" textfile="$(find tiago_moveit_config)/config/srdf/tiago_$(arg file_suffix).srdf" />
   <param if="$(eval end_effector == 'custom')" name="$(arg robot_description)_semantic" textfile="$(find moveit_custom_config)/config/srdf/tiago_custom.srdf" />
 
+  <!-- Load padding -->
+  <group ns="move_group" if="$(arg arm)">
+    <group ns="$(arg robot_description)_planning">
+      <rosparam command="load" file="$(find tiago_moveit_config)/config/padding.yaml" />
+    </group>
+  </group>
+
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
     <rosparam command="load" file="$(find tiago_moveit_config)/config/joint_limits.yaml"/>
