@@ -2,6 +2,21 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'extra-moveit-capabilities' into 'erbium-devel'
+  Extra moveit capabilities
+  See merge request robots/tiago_moveit_config!47
+* Add arguments for advanced grasping
+* Add sensor manager param
+* Add dependency on pal_moveit_plugins
+* set capability default back to empty
+* Add capability loader plugin
+* Add extra capabilities
+* If no arm don't load padding of arm
+* Add link padding to arm-link-5
+* Contributors: David ter Kuile, saikishor
+
 1.2.3 (2022-08-01)
 ------------------
 * Merge branch 'gallium-fix' into 'erbium-devel'
