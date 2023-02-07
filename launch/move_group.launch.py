@@ -94,6 +94,7 @@ def launch_setup(context, *args, **kwargs):
         .trajectory_execution(moveit_simple_controllers_path)
         .planning_pipelines(pipelines=['ompl'])
         .planning_scene_monitor(planning_scene_monitor_parameters)
+        .pilz_cartesian_limits(file_path=os.path.join('config', 'pilz_cartesian_limits.yaml'))
         .to_moveit_configs()
     )
 
