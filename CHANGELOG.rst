@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.1 (2023-02-08)
+------------------
 * Merge branch 'fix_move_group' into 'humble-devel'
   Add missing pilz_cartesian_limits for moveit config
   See merge request robots/tiago_moveit_config!50
