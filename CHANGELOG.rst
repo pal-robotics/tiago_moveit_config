@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.5 (2023-02-28)
+------------------
 * Merge branch 'fix-gallium-dependencies' into 'erbium-devel'
   Add noetic condition on pal-moveit-plugins in package.xml
   See merge request robots/tiago_moveit_config!51
