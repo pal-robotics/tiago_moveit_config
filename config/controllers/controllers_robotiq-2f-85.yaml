@@ -13,6 +13,18 @@ controller_list:
       - arm_5_joint
       - arm_6_joint
       - arm_7_joint
+  - name: arm_velocity_trajectory_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - arm_1_joint
+      - arm_2_joint
+      - arm_3_joint
+      - arm_4_joint
+      - arm_5_joint
+      - arm_6_joint
+      - arm_7_joint
   - name: torso_controller
     action_ns: follow_joint_trajectory
     type: FollowJointTrajectory
