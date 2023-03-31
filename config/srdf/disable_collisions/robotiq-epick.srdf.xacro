@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<robot name="tiago" xmlns:xacro="http://ros.org/wiki/xacro">
+  <disable_collisions link1="gripper_base_link" link2="gripper_coupler_link" reason="Adjacent"/>
+  <disable_collisions link1="gripper_base_link" link2="gripper_end_effector" reason="Adjacent"/>
+  <disable_collisions link1="gripper_coupler_link" link2="gripper_end_effector" reason="Never"/>
+</robot>

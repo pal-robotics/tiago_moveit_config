@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:property name="end_effector_name" value="gripper" />
+    <xacro:macro name="define_end_effector" params="arm name">
+        <group name="${name}">
+            <link name="${name}_coupler_link" />
+            <link name="${name}_base_link" />
+            <link name="${name}_end_effector" />
+        </group>
+        <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+        <end_effector name="${name}" parent_link="${arm}_tool_link" group="${name}" parent_group="${arm}_torso" />
+    </xacro:macro>
+</robot>
