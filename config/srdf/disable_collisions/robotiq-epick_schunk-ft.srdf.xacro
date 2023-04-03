@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<robot name="tiago" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/robotiq-epick.srdf.xacro" />
+  <disable_collisions link1="gripper_base_link" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_base_link" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="gripper_coupler_link" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_coupler_link" link2="wrist_ft_tool_link" reason="Adjacent"/>
+  <disable_collisions link1="gripper_end_effector" link2="wrist_ft_link" reason="Never"/>
+  <disable_collisions link1="gripper_end_effector" link2="wrist_ft_tool_link" reason="Never"/>
+  <disable_collisions link1="wrist_ft_link" link2="wrist_ft_tool_link" reason="Adjacent"/>
+</robot>
