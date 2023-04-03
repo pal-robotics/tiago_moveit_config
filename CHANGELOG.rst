@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-epick-gripper-xacro' into 'erbium-devel'
+  Added eqick gripper xacro files
+  See merge request robots/tiago_moveit_config!53
+* Added eqick gripper xacro files for automatic srdf files generation
+* Contributors: saikishor, sergiacosta
+
 1.2.5 (2023-02-28)
 ------------------
 * Merge branch 'fix-gallium-dependencies' into 'erbium-devel'
