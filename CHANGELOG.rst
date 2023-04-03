@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.6 (2023-04-03)
+------------------
 * Merge branch 'add-epick-gripper-xacro' into 'erbium-devel'
   Added eqick gripper xacro files
   See merge request robots/tiago_moveit_config!53
