@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.8 (2023-04-11)
+------------------
 * Merge branch 'add-odom-virtual-joint' into 'erbium-devel'
   Add odom virtual joint
   See merge request robots/tiago_moveit_config!55
