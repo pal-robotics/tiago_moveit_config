@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-epick-srdf' into 'erbium-devel'
+  Updated srdf files with epick gripper
+  See merge request robots/tiago_moveit_config!54
+* Updated epick gripper dependent files using update.sh
+* Contributors: saikishor, sergiacosta
+
 1.2.6 (2023-04-03)
 ------------------
 * Merge branch 'add-epick-gripper-xacro' into 'erbium-devel'
