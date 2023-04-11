@@ -2,6 +2,15 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add-odom-virtual-joint' into 'erbium-devel'
+  Add odom virtual joint
+  See merge request robots/tiago_moveit_config!55
+* Updated files using update.sh script
+* Added virtual joint to srdf.xacro file
+* Contributors: saikishor, sergiacosta
+
 1.2.7 (2023-04-11)
 ------------------
 * Merge branch 'add-epick-srdf' into 'erbium-devel'
