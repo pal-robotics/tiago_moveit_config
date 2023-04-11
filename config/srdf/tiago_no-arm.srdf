@@ -8,6 +8,7 @@
     A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
 -->
 <robot name="tiago">
+    <virtual_joint child_link="base_footprint" name="odom_to_base" parent_frame="odom" type="planar" />
     <group name="torso">
         <joint name="torso_lift_joint" />
     </group>
