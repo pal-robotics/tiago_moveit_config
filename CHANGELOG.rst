@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.7 (2023-04-11)
+------------------
 * Merge branch 'add-epick-srdf' into 'erbium-devel'
   Updated srdf files with epick gripper
   See merge request robots/tiago_moveit_config!54
