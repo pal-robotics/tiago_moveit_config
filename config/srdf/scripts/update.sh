@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -o pipefail
 ulimit -m 8048000
 pal_moveit_config_generator=$(rospack find pal_moveit_config_generator)
 source "$pal_moveit_config_generator/srdf_utils.sh" "$(dirname "${BASH_SOURCE[0]}")/../tiago.srdf.xacro"
