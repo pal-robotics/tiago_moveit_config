@@ -66,14 +66,13 @@ def launch_setup(context, *args, **kwargs):
         'wrist_model': wrist_model,
     }
 
-    robot_description_semantic = ('config/srdf/tiago_' + get_tiago_hw_suffix(
-        arm=arm, wrist_model=None, end_effector=end_effector, ft_sensor=ft_sensor) + '.srdf')
+    robot_description_semantic = ('config/srdf/tiago' + get_tiago_hw_suffix(
+        arm=arm, end_effector=end_effector, ft_sensor=ft_sensor) + '.srdf')
 
     # Trajectory Execution Functionality
     moveit_simple_controllers_path = (
-        'config/controllers/controllers_' +
-        get_tiago_hw_suffix(arm=arm, wrist_model=None,
-                            end_effector=end_effector, ft_sensor=ft_sensor) + '.yaml')
+        'config/controllers/controllers' +
+        get_tiago_hw_suffix(arm=arm, end_effector=end_effector, ft_sensor=ft_sensor) + '.yaml')
 
     planning_scene_monitor_parameters = {
         'publish_planning_scene': True,
