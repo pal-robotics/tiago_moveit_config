@@ -2,6 +2,12 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* config files regeneration
+* update get_tiago_hw_suffix method usage
+* Contributors: Noel Jimenez
+
 3.0.1 (2023-02-08)
 ------------------
 * Merge branch 'fix_move_group' into 'humble-devel'
