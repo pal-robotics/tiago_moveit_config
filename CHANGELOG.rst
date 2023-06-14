@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.2 (2023-06-14)
+------------------
 * config files regeneration
 * update get_tiago_hw_suffix method usage
 * Contributors: Noel Jimenez
