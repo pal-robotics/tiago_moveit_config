@@ -2,6 +2,16 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'mlu/fix/epick-srdfs' into 'erbium-devel'
+  Fix old epick disable_collisions/*.srdf.xacro
+  See merge request robots/tiago_moveit_config!56
+* Add missing links from no-ee to epick SRDFs
+* Fix old epick disable_collisions/*.srdf.xacro
+  with-arm got renamed to no-ee in the meantime
+* Contributors: Mathias Lüdtke, Sai Kishor Kothakota
+
 1.2.8 (2023-04-11)
 ------------------
 * Merge branch 'add-odom-virtual-joint' into 'erbium-devel'
