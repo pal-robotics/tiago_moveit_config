@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="tiago" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/tiago_omni_with-arm_schunk-ft.srdf.xacro" />
+  <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/tiago_omni_no-ee_schunk-ft.srdf.xacro" />
   <xacro:include filename="$(find tiago_moveit_config)/config/srdf/disable_collisions/robotiq-epick_schunk-ft.srdf.xacro" />
   <disable_collisions link1="arm_1_link" link2="gripper_coupler_link" reason="Never"/>
   <disable_collisions link1="arm_1_link" link2="gripper_end_effector" reason="Never"/>
