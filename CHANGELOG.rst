@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.9 (2023-06-20)
+------------------
 * Merge branch 'mlu/fix/epick-srdfs' into 'erbium-devel'
   Fix old epick disable_collisions/*.srdf.xacro
   See merge request robots/tiago_moveit_config!56
