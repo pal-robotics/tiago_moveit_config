@@ -36,7 +36,7 @@
 
   <!-- Load padding -->
   <group ns="$(arg robot_description)_planning">
-    <rosparam command="load" file="$(find tiago_moveit_config)/config/padding.yaml" />
+    <rosparam command="load" file="$(find tiago_moveit_config)/config/padding/padding_arm.yaml" if="$(arg arm)"/>
   </group>
 
   <!-- Load updated joint limits (override information from URDF) -->
