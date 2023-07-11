@@ -2,6 +2,19 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'padding-update' into 'erbium-devel'
+  Update deprecated namespace of padding.yaml
+  See merge request robots/tiago_moveit_config!59
+* Add arm_padding only if robot has arm
+* Update deprecated namespace of padding.yaml
+* Merge branch 'mlu/fix/update-script' into 'erbium-devel'
+  Enable pipefail in update script
+  See merge request robots/tiago_moveit_config!57
+* Enable pipefile in update script
+* Contributors: David ter Kuile, Mathias Lüdtke, Sai Kishor Kothakota
+
 1.2.9 (2023-06-20)
 ------------------
 * Merge branch 'mlu/fix/epick-srdfs' into 'erbium-devel'
