@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.10 (2023-07-11)
+-------------------
 * Merge branch 'padding-update' into 'erbium-devel'
   Update deprecated namespace of padding.yaml
   See merge request robots/tiago_moveit_config!59
