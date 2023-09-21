@@ -2,6 +2,18 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'add_modules' into 'humble-devel'
+  Adding move_group module
+  See merge request robots/tiago_moveit_config!61
+* Adding move_group module
+* Merge branch 'remove_pal_flags_dependency' into 'humble-devel'
+  Remove pal flags dependency
+  See merge request robots/tiago_moveit_config!60
+* Remove pal flags dependency
+* Contributors: Jordan Palacios, Noel Jimenez
+
 3.0.2 (2023-06-14)
 ------------------
 * config files regeneration
