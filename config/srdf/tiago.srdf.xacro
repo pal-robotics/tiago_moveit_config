@@ -14,7 +14,7 @@
     <xacro:property name="ft_sensor" value="$(arg ft_sensor)"/>
     <xacro:property name="has_ft_sensor" value="${ft_sensor not in ['false', False]}"/>
     <xacro:property name="robot" value="tiago"/>
-<virtual_joint name="odom_to_base" child_link="base_footprint" parent_frame="odom" type="planar"/>
+<!-- <virtual_joint name="odom_to_base" child_link="base_footprint" parent_frame="odom" type="planar"/> -->
 <xacro:if value="${base_type == 'omni_base'}">
     <xacro:property name="robot" value="tiago_omni"/>
 </xacro:if>
