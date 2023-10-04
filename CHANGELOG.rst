@@ -2,6 +2,15 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'virtual-joint-issue' into 'erbium-devel'
+  Removed virtual joint for grasp candidates compatibility
+  See merge request robots/tiago_moveit_config!62
+* Update octomap properties of advanced grasping
+* Removed virtual joint for grasp candidates compatibility
+* Contributors: David ter Kuile, davidterkuile, sergiacosta
+
 1.2.10 (2023-07-11)
 -------------------
 * Merge branch 'padding-update' into 'erbium-devel'
