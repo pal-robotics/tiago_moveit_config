@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.11 (2023-10-04)
+-------------------
 * Merge branch 'virtual-joint-issue' into 'erbium-devel'
   Removed virtual joint for grasp candidates compatibility
   See merge request robots/tiago_moveit_config!62
