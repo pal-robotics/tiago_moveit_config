@@ -1,2 +1,10 @@
 move_group:
-  launch: "tiago_moveit_config move_group.launch.py use_sim_time:=false"
+  launch: "tiago_moveit_config move_group.launch.py 
+           robot_name:=@robot_type@
+           arm:=@arm@
+           camera_model:=@camera_model@
+           end_effector:=@end_effector@
+           ft_sensor:=@ft_sensor@
+           laser_model:=@laser_model@
+           wrist_model:=@wrist_model@
+           use_sim_time:=false"
