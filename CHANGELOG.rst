@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Specify arguments for move_group module
+* Contributors: Noel Jimenez
+
 3.0.3 (2023-09-21)
 ------------------
 * Merge branch 'add_modules' into 'humble-devel'
