@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.4 (2023-11-07)
+------------------
 * Specify arguments for move_group module
 * Contributors: Noel Jimenez
 
