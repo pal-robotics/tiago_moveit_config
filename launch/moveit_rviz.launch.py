@@ -113,7 +113,7 @@ def launch_setup(context, *args, **kwargs):
 def generate_launch_description():
 
     sim_time_arg = DeclareLaunchArgument(
-        'use_sim_time', default_value='True', description='Use sim time'
+        'use_sim_time', default_value='False', description='Use sim time'
     )
 
     ld = LaunchDescription()
