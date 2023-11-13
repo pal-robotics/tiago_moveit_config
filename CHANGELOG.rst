@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.5 (2023-11-13)
+------------------
 * Remove use_sim_time from module
 * Set use_sim_time false as default
 * Contributors: Noel Jimenez

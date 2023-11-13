@@ -1,6 +1,6 @@
 <package format="3">
   <name>tiago_moveit_config</name>
-  <version>3.0.4</version>
+  <version>3.0.5</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the tiago with the MoveIt Motion Planning Framework
   </description>
