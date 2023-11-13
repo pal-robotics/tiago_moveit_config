@@ -2,6 +2,12 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove use_sim_time from module
+* Set use_sim_time false as default
+* Contributors: Noel Jimenez
+
 3.0.4 (2023-11-07)
 ------------------
 * Specify arguments for move_group module
