@@ -11,9 +11,7 @@
 
   <license>Apache License 2.0</license>
 
-  <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit_setup_assistant</url>
+  <url type="website">https://github.com/pal-robotics/tiago_simulation</url>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
