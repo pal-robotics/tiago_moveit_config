@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update website
+* Contributors: Noel Jimenez
+
 3.0.5 (2023-11-13)
 ------------------
 * Remove use_sim_time from module
