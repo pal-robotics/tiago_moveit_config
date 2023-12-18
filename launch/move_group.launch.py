@@ -53,6 +53,7 @@ def launch_setup(context, *args, **kwargs):
     ft_sensor = read_launch_argument('ft_sensor', context)
     laser_model = read_launch_argument('laser_model', context)
     wrist_model = read_launch_argument('wrist_model', context)
+    use_sensor_manager = read_launch_argument('use_sensor_manager', context)
 
     robot_description_path = os.path.join(
         get_package_share_directory('tiago_description'), 'robots', 'tiago.urdf.xacro')
@@ -94,8 +95,14 @@ def launch_setup(context, *args, **kwargs):
         .planning_pipelines(pipelines=['ompl'])
         .planning_scene_monitor(planning_scene_monitor_parameters)
         .pilz_cartesian_limits(file_path=os.path.join('config', 'pilz_cartesian_limits.yaml'))
-        .to_moveit_configs()
     )
+
+    if use_sensor_manager:
+        # moveit_sensors path
+        moveit_sensors_path = 'config/sensors_3d.yaml'
+        moveit_config.sensors_3d(moveit_sensors_path)
+
+    moveit_config.to_moveit_configs()
 
     # Start the actual move_group node/action server
     run_move_group_node = Node(
@@ -117,6 +124,12 @@ def generate_launch_description():
         'use_sim_time', default_value='False', description='Use sim time'
     )
 
+    use_sensor_manager_arg = DeclareLaunchArgument(name='use_sensor_manager',
+                                                   default_value='False',
+                                                   choices=['True', 'False'],
+                                                   description='Use moveit_sensor_manager \
+                                                for octomap')
+
     ld = LaunchDescription()
 
     # Declare arguments
@@ -124,6 +137,7 @@ def generate_launch_description():
     ld.add_action(get_robot_name('tiago'))
     ld.add_action(OpaqueFunction(function=declare_args))
     ld.add_action(sim_time_arg)
+    ld.add_action(use_sensor_manager_arg)
 
     # Execute move_group node
     ld.add_action(OpaqueFunction(function=launch_setup))
