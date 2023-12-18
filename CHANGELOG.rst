@@ -2,6 +2,13 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add if statement for moveit sensor manager
+* Newline at the end of the file
+* Add moveit sensor params
+* Contributors: David ter Kuile, Noel Jimenez
+
 3.0.6 (2023-11-14)
 ------------------
 * Update website
