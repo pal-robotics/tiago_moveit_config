@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Update advanced_grasping sensors
+* Contributors: David ter Kuile
+
 1.2.11 (2023-10-04)
 -------------------
 * Merge branch 'virtual-joint-issue' into 'erbium-devel'
