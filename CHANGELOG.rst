@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.12 (2023-12-21)
+-------------------
 * Update advanced_grasping sensors
 * Contributors: David ter Kuile
 
