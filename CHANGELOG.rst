@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Publish robot_description_semantic
+* Contributors: Noel Jimenez
+
 3.0.7 (2023-12-18)
 ------------------
 * Add if statement for moveit sensor manager
