@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.8 (2024-01-12)
+------------------
 * Publish robot_description_semantic
 * Contributors: Noel Jimenez
 
