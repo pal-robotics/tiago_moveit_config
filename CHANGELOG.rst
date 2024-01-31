@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.9 (2024-01-31)
+------------------
 * delete arm controllers when no-arm
 * change config files name when no end_effector & adding robotiq config files
 * Contributors: Aina Irisarri
