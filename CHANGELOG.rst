@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update-sensor-padding' into 'erbium-devel'
+  Update sensor padding
+  See merge request robots/tiago_moveit_config!73
+* Update sensor padding
+* Contributors: David ter Kuile, davidterkuile
+
 1.2.13 (2024-02-28)
 -------------------
 * Merge branch 'update-move-group' into 'erbium-devel'
