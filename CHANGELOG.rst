@@ -2,6 +2,17 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'update-move-group' into 'erbium-devel'
+  Update move group
+  See merge request robots/tiago_moveit_config!72
+* Update dependency moveit_chomp_optimizer_adapter
+* Reset ompl default settings
+* Rename to ompl_chomp
+* Update move_group
+* Contributors: David ter Kuile, davidterkuile
+
 1.2.12 (2023-12-21)
 -------------------
 * Update advanced_grasping sensors
