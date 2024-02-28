@@ -20,12 +20,9 @@ from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
 from launch_pal.arg_utils import read_launch_argument
 from launch_pal.robot_utils import (get_arm,
-                                    get_camera_model,
                                     get_end_effector,
                                     get_ft_sensor,
-                                    get_laser_model,
-                                    get_robot_name,
-                                    get_wrist_model)
+                                    get_robot_name)
 from launch_ros.actions import Node
 
 from moveit_configs_utils import MoveItConfigsBuilder
@@ -38,33 +35,15 @@ def declare_args(context, *args, **kwargs):
 
     # TIAGo description arguments
     return [get_arm(robot_name),
-            get_camera_model(robot_name),
             get_end_effector(robot_name),
-            get_ft_sensor(robot_name),
-            get_laser_model(robot_name),
-            get_wrist_model(robot_name)]
+            get_ft_sensor(robot_name)]
 
 
 def launch_setup(context, *args, **kwargs):
 
     arm = read_launch_argument('arm', context)
-    camera_model = read_launch_argument('camera_model', context)
     end_effector = read_launch_argument('end_effector', context)
     ft_sensor = read_launch_argument('ft_sensor', context)
-    laser_model = read_launch_argument('laser_model', context)
-    wrist_model = read_launch_argument('wrist_model', context)
-
-    robot_description_path = os.path.join(
-        get_package_share_directory('tiago_description'), 'robots', 'tiago.urdf.xacro')
-
-    mappings = {
-        'arm': arm,
-        'camera_model': camera_model,
-        'end_effector': end_effector,
-        'ft_sensor': ft_sensor,
-        'laser_model': laser_model,
-        'wrist_model': wrist_model,
-    }
 
     robot_description_semantic = ('config/srdf/tiago' + get_tiago_hw_suffix(
         arm=arm, end_effector=end_effector, ft_sensor=ft_sensor) + '.srdf')
@@ -74,9 +53,9 @@ def launch_setup(context, *args, **kwargs):
         'config/controllers/controllers' +
         get_tiago_hw_suffix(arm=arm, end_effector=end_effector, ft_sensor=ft_sensor) + '.yaml')
 
+    # The robot description is read from the topic /robot_description if the parameter is empty
     moveit_config = (
         MoveItConfigsBuilder('tiago')
-        .robot_description(file_path=robot_description_path, mappings=mappings)
         .robot_description_semantic(file_path=robot_description_semantic)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics_kdl.yaml'))
         .trajectory_execution(moveit_simple_controllers_path)
