@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.13 (2024-02-28)
+-------------------
 * Merge branch 'update-move-group' into 'erbium-devel'
   Update move group
   See merge request robots/tiago_moveit_config!72
