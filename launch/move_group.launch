@@ -33,10 +33,10 @@
   <arg     if="$(arg info)" name="command_args" value="--debug" />
 
   <!-- move_group settings -->
+  <arg name="pipeline" default="ompl" />
   <arg name="allow_trajectory_execution" default="true"/>
   <arg name="fake_execution" default="false"/>
   <arg name="max_safe_path_cost" default="1"/>
-  <arg name="jiggle_fraction" default="0.05" />
   <arg name="publish_monitored_planning_scene" default="true"/>
 
   <arg name="capabilities" default=""/>
@@ -57,10 +57,36 @@
                 " />
   -->
 
-  <!-- Planning Functionality -->
-  <include ns="move_group" file="$(find tiago_moveit_config)/launch/planning_pipeline.launch.xml">
-    <arg name="pipeline" value="ompl" />
-  </include>
+
+  <!-- Planning Pipelines -->
+  <group ns="move_group/planning_pipelines">
+
+    <!-- OMPL -->
+    <include file="$(dirname)/planning_pipeline.launch.xml">
+      <arg name="pipeline" value="ompl" />
+    </include>
+
+    <include file="$(dirname)/planning_pipeline.launch.xml">
+      <arg name="pipeline" value="ompl_chomp" />
+    </include>
+
+    <!-- CHOMP -->
+    <include file="$(dirname)/planning_pipeline.launch.xml">
+      <arg name="pipeline" value="chomp" />
+    </include>
+
+    <!-- Pilz Industrial Motion -->
+    <include file="$(dirname)/planning_pipeline.launch.xml">
+      <arg name="pipeline" value="pilz_industrial_motion_planner" />
+    </include>
+
+    <!-- Support custom planning pipeline -->
+    <include if="$(eval arg('pipeline') not in ['ompl', 'chomp', 'pilz_industrial_motion_planner'])"
+             file="$(dirname)/planning_pipeline.launch.xml">
+      <arg name="pipeline" value="$(arg pipeline)" />
+    </include>
+  </group>
+
 
   <!-- Trajectory Execution Functionality -->
   <arg name="file_suffix" 
@@ -90,12 +116,15 @@
     <env name="DISPLAY" value="$(optenv DISPLAY :0)" />
 
     <param name="allow_trajectory_execution" value="$(arg allow_trajectory_execution)"/>
-    <param name="max_safe_path_cost" value="$(arg max_safe_path_cost)"/>
-    <param name="jiggle_fraction" value="$(arg jiggle_fraction)" />
+    <param name="sense_for_plan/max_safe_path_cost" value="$(arg max_safe_path_cost)"/>
+    <param name="default_planning_pipeline" value="$(arg pipeline)" />
 
     <!-- MoveGroup capabilities to load -->
     <param name="capabilities" value="$(arg capabilities)"/>
     <param name="disable_capabilities" value="$(arg disable_capabilities)"/>
+    <!-- do not copy dynamics information from /joint_states to internal robot monitoring
+         default to false, because almost nothing in move_group relies on this information -->
+    <param name="monitor_dynamics" value="false" />
 
     <!-- Publish the planning scene of the physical robot so that rviz plugin can know actual robot -->
     <param name="planning_scene_monitor/publish_planning_scene" value="$(arg publish_monitored_planning_scene)" />
