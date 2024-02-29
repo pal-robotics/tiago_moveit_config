@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Read robot_description from the topic
+* Contributors: Noel Jimenez
+
 3.0.9 (2024-01-31)
 ------------------
 * delete arm controllers when no-arm
