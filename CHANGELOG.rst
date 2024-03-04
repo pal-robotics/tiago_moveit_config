@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Install the moveit setup assistant to avoid some warnings
+* Contributors: Noel Jimenez
+
 3.0.10 (2024-02-29)
 -------------------
 * Read robot_description from the topic
