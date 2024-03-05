@@ -77,6 +77,7 @@ def launch_setup(context, *args, **kwargs):
         executable='rviz2',
         output='log',
         arguments=['-d', rviz_full_config],
+        emulate_tty=True,
         parameters=[
             use_sim_time,
             moveit_config.robot_description,
