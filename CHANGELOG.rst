@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.12 (2024-03-06)
+-------------------
 * Enable log colors for move_group and rviz nodes
 * Revert "Install the moveit setup assistant to avoid some warnings"
   This reverts commit 7d51b736a0d22bd12bad43f9322f1a52c4532d46.
