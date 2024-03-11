@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.2.15 (2024-03-11)
+-------------------
 * Merge branch 'velocity_interface' into 'erbium-devel'
   Velocity interface
   See merge request robots/tiago_moveit_config!71
