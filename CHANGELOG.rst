@@ -2,6 +2,15 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'velocity_interface' into 'erbium-devel'
+  Velocity interface
+  See merge request robots/tiago_moveit_config!71
+* add all the velocity controllers params to the yaml file of each gripper
+* joint velocity limit modified for the joint 6
+* Contributors: Sai Kishor Kothakota, ileniaperrella
+
 1.2.14 (2024-02-28)
 -------------------
 * Merge branch 'update-sensor-padding' into 'erbium-devel'
