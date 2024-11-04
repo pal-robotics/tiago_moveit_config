@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.1.1 (2024-11-04)
+------------------
 * Merge branch 'tpe/fix_base_type_arg' into 'humble-devel'
   Add base_type arg to move_group
   See merge request robots/tiago_moveit_config!88
