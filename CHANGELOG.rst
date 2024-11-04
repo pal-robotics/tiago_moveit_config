@@ -2,6 +2,14 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'tpe/fix_base_type_arg' into 'humble-devel'
+  Add base_type arg to move_group
+  See merge request robots/tiago_moveit_config!88
+* Add base_type arg to move_group
+* Contributors: thomas.peyrucain, thomaspeyrucain
+
 3.1.0 (2024-09-18)
 ------------------
 * remove ft-sensor in hw suffix and files
