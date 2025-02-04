@@ -127,6 +127,7 @@ def start_move_group(context, *args, **kwargs):
     move_group_configuration = {
         "use_sim_time": LaunchConfiguration("use_sim_time"),
         "publish_robot_description_semantic": True,
+        "robot_description_timeout": 60.0,
     }
 
     move_group_params = [
