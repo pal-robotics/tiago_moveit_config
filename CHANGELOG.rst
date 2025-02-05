@@ -2,8 +2,8 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.1.2 (2025-02-05)
+------------------
 * Set robot_description_timeout to 60 seconds
 * Contributors: Noel Jimenez
 
