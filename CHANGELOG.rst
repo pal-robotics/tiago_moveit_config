@@ -2,6 +2,11 @@
 Changelog for package tiago_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Set robot_description_timeout to 60 seconds
+* Contributors: Noel Jimenez
+
 3.1.1 (2024-11-04)
 ------------------
 * Merge branch 'tpe/fix_base_type_arg' into 'humble-devel'
