@@ -117,7 +117,7 @@ def start_move_group(context, *args, **kwargs):
         .pilz_cartesian_limits(file_path=pilz_cartesian_limits)
     )
 
-    if use_sensor_manager:
+    if use_sensor_manager == "True":
         # moveit_sensors path
         moveit_sensors_path = "config/sensors_3d.yaml"
         moveit_config.sensors_3d(moveit_sensors_path)
