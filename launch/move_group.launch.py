@@ -64,7 +64,7 @@ def declare_actions(
 
 def start_move_group(context, *args, **kwargs):
 
-    base_type = read_launch_argument("base_type", context),
+    base_type = read_launch_argument("base_type", context)
     arm_type = read_launch_argument("arm_type", context)
     end_effector = read_launch_argument("end_effector", context)
     ft_sensor = read_launch_argument("ft_sensor", context)
